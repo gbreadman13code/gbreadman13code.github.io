@@ -1,0 +1,414 @@
+html
+ font-size: 10px
+ @media (max-width: 576px)
+  font-size: 8px		
+body
+ font-family: 'Roboto Mono', monospace
+ margin: 0
+ padding: 0
+p
+ margin: 0
+input, textarea
+ outline: none
+section
+ &.portfolio-block, &.contact-with-me, &.skills-block, &.about-me-block, &.footer-block
+  height: auto
+ &.about-me-block
+  height: 100vh
+ &.footer-block
+  padding: 50px 0
+ &.header
+  height: 100vh
+.dark-bg
+ width: 100%
+ height: 100%
+ background-color: rgba(0, 0, 0, 0.5)
+ padding: 50px 0
+.header
+ display: flex
+ flex-direction: column
+ justify-content: space-between
+ align-items: center
+.top-nav-wrap
+ width: 100%
+ background-color: #fff
+ .top-nav
+  display: flex
+  justify-content: space-between
+  align-items: center
+  .logo a
+   display: block
+   padding: 20px
+   color: #545454
+   font-size: 3.4rem
+   line-height: 2.4rem
+   font-weight: 700
+   text-transform: uppercase
+   text-decoration: none
+   span 
+    color: #141414
+   small
+    font-size: 1.6rem
+    line-height: 1.6rem
+    letter-spacing: 3px
+  .menu
+   .overfrow-wrap
+    position: absolute
+    top: 90px
+    right: 100px
+    overflow-y: hidden
+    @media (max-width: 576px) 
+     top: 80px
+     right: 40px
+    @media (max-width: 768px)
+     right: 60px
+    .menu-list-wrap
+     background-color: white
+     transform-origin: top center
+     transition: 1s
+     transform: translateY(-200px)
+    .menu-list-wrap_active
+     transform: translateY(0px)
+    .menu-list-wrap
+     ul
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      padding: 0
+      margin: 0
+      height: 200px
+      list-style: none
+      text-align: right
+      li
+       display: flex
+       align-items: center
+       justify-content: flex-end
+       height: 100%
+       padding: 0 20px
+       font-size: 2rem
+       text-transform: uppercase
+       &:hover
+        background-color: #CFD8DC
+       a
+        color: black
+        text-decoration: none
+
+// Бургер-меню
+svg 
+ height: 80px 
+ position: absolute 
+ width: 80px 
+.plate 
+ height: 80px 
+ width: 80px 
+.burger 
+ filter: url(#gooeyness) 
+.x 
+ transform: scale(0) 
+ transition: transform 400ms 
+ .line 
+  stroke-width: 5.5px 
+.line 
+ fill: none 
+ stroke: black 
+ stroke-width: 6px 
+ stroke-linecap: round 
+ stroke-linejoin: round 
+ transform-origin: 50% 
+ transition: stroke-dasharray 500ms 200ms, stroke-dashoffset 500ms 200ms, transform 500ms 200ms 
+.plate1 
+ .line2 
+  stroke-dasharray: 40 200 
+  stroke-dashoffset: 0px 
+ .line3 
+  stroke-dasharray: 40 179 
+  stroke-dashoffset: 0px 
+.active 
+ .line 
+  transition: stroke-dasharray 500ms, stroke-dashoffset 500ms, transform 500ms 
+ &.plate1 
+  .line1 
+   transform: scale(0, 1) 
+   transition: transform 500ms 100ms 
+  .line2 
+   stroke-dasharray: 5px 200 
+   stroke-dashoffset: -164px 
+  .line3 
+   stroke-dasharray: 5px 179 
+   stroke-dashoffset: -142px 
+ .x 
+  transform: scale(1) 
+  transition: transform 400ms 350ms  
+// Конец бургер-меню
+
+.main-list
+ display: flex
+ flex-direction: column
+ align-items: flex-end
+ margin-top: -200px
+ margin-right: 100px
+ padding-top: 100px
+ @media (max-width: 576px) 
+  margin-right: 20px
+  padding-left: 50px
+ @media (max-width: 992px)
+  align-items: flex-start
+ small
+  display: block
+  text-align: right
+  width: 39%
+  font-size: 2rem
+  color: white
+  @media (max-width: 576px) 
+   font-size: 1.8rem
+   width: 100%
+   text-align: left
+   margin-top: 400px
+   margin-left: 200px
+  @media (max-width: 768px)
+   text-align: left
+   width: 85%
+   margin-top: 380px
+   margin-left: -200px
+  @media (max-width: 992px)
+   text-align: left
+   margin-top: 380px
+   margin-left: 100px
+   width: 70%
+.scroll-down
+ color: #fff
+ font-size: 60px
+ margin-bottom: 50px
+ @media (max-width: 576px)
+  margin-top: 70px
+.portfolio-block
+ font-size: 3rem
+ display: flex
+ justify-content: right
+ h2
+  font-size: 4.5rem
+  @media (max-width: 576px) 
+   text-align: center
+   font-size: 3rem
+ .portfolio-item-wrap
+  display: flex
+  flex-wrap: wrap
+  @media (max-width: 576px) 
+   justify-content: center
+  @media (max-width: 768px)
+   justify-content: center
+  @media (max-width: 992px)
+   justify-content: center
+ .portfolio-item 
+  width: 250px
+  height: 250px
+  margin-bottom: 30px
+  margin-right: 30px
+  background-image: url('../img/portfolio-cover.jpg')
+  background-position: center
+  background-size: cover
+  color: #fff
+  display: inline-flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  text-align: center
+  position: relative
+  text-decoration: none
+  @media (max-width: 576px) 
+   margin-right: 0
+  @media (max-width: 768px)
+  &:nth-child(4n)
+   margin-right: 0
+   @media (max-width: 768px)
+    margin-right: 30px
+   @media (max-width: 992px)
+    margin-right: 30px
+  &:hover h3,
+  &:hover p
+   transform: translateY(0)
+   opacity: 1
+   visibility: visible
+  &:before
+   content: ''
+   position: absolute
+   top: 5%
+   right: 5%
+   bottom: 5%
+   left: 5%
+   border-top: solid 2px
+   border-bottom: solid 2px
+   transition: 0.2s
+   transform: scaleX(0)
+   :hover
+    transform: scale(1)
+  &:after
+   content: ''
+   position: absolute
+   top: 5%
+   right: 5%
+   bottom: 5%
+   left: 5%
+   border-left: solid 2px
+   border-right: solid 2px
+   transition: 0.2s
+   transform: scaleY(0)
+   &:after:hover
+    transform: scale(1)
+  h3
+   font-size: 2rem
+   transition: 0.2s
+   transform: translateY(20px)
+  p
+   font-size: 2rem
+   transition: 0.2s
+   transform: translateY(-20px)
+   opacity: 0
+   visibility: hidden
+.skills-block
+ h2
+  font-size: 4.5rem
+  margin: 0 0 40px 0
+  color: #fff
+  @media (max-width: 576px) 
+   text-align: center
+   font-size: 3rem
+ .skills-item-wrap
+  .skill-item
+   display: flex
+   flex-direction: column
+   align-items: center
+   background-color: rgba(255, 255, 255, 0.3)
+   padding: 5px 0 0 0
+   border-bottom-right-radius: 10px
+   border-bottom-left-radius: 10px
+   @media (max-width: 576px) 
+    width: 65%
+    margin-bottom: 20px
+   @media (max-width: 768px)
+    margin-bottom: 20px
+   @media (max-width: 992px)
+    margin-bottom: 20px
+   .skill-name
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    width: 200px
+    height: 200px
+    margin-bottom: 20px
+    &.html
+     background: url('../img/HTML5_Logo_64.png') no-repeat center
+     background-size: contain
+    &.css
+     background: url('../img/css3_logo.png') no-repeat center
+     background-size: contain
+    &.jq
+     background: url('../img/jquery-2.svg') no-repeat center
+     background-size: contain
+    &.ps
+     background: url('../img/photoshop-cc.svg') no-repeat center
+     background-size: contain
+    .name
+     font-size: 7rem
+    .percent
+     font-size: 4rem
+   .progress-line
+    width: 100%
+    height: 20px
+    border-radius: 20px
+    .progress
+     height: 100%
+     width: 80%
+     background-color: #fff
+     border-radius: 20px
+     animation-name: progress
+     animation-duration: 3s
+@keyframes progress
+ from
+  width: 0%
+ to
+  width: 80%
+.user-info
+ display: flex
+ flex-direction: column
+ input
+  width: 100%
+  margin-bottom: 20px
+  padding: 10px 30px
+  font-size: 2rem
+  border: 1px solid black
+  border-radius: 10px
+  background-color: #F0F4C3
+ label
+  font-size: 2rem
+  margin-left: 10px
+  margin-bottom: 10px
+.contact-with-me
+ h2
+  font-size: 4.5rem
+  margin: 40px 0 40px 0
+  @media (max-width: 576px) 
+   text-align: center
+   font-size: 3rem
+ .user-message
+  display: flex
+  flex-direction: column
+  height: 100%
+  textarea
+   width: 100%
+   margin-bottom: 20px
+   padding: 10px 30px
+   font-size: 2rem
+   border: 1px solid black
+   border-radius: 10px
+   resize: none
+   height: 100%
+   background-color: #F0F4C3
+  label
+   font-size: 2rem
+   margin-left: 10px
+   margin-bottom: 10px
+ .contact-submit
+  width: 100%
+  padding: 10px 0
+  border: 1px solid black
+  border-radius: 10px
+  margin-top: 26px
+  background-color: #F0F4C3
+  font-size: 2rem
+  margin-bottom: 50px   
+.about-me-block
+ h2
+  font-size: 4.5rem
+  margin: 0
+  color: white
+  @media (max-width: 576px)
+   font-size: 3rem
+ p
+  font-size: 1.3rem
+  margin-top: 25px
+  color: white
+.footer-block
+ .footer
+  display: flex
+  justify-content: space-between
+  align-items: center
+  @media (max-width: 576px)
+   flex-direction: column
+  @media (max-width: 768px)
+   flex-direction: column
+  .social-block
+   .social 
+    display: flex
+    justify-content: space-between
+    & a
+     color: black
+     font-size: 3rem
+     text-decoration: none
+
+
+
+
+
+
