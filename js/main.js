@@ -1,1 +1,0 @@
-jQuery(document).ready(function(t){t(".burger-menu").click(function(){t(".menu-list-wrap").toggleClass("menu-list-wrap_active")}),t('a[href^="#"]').click(function(){event.preventDefault();var e=t(this).attr("href");t("html, body").animate({scrollTop:t(e).offset().top-0},1e3)})});
