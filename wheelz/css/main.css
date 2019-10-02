@@ -50,7 +50,7 @@ body {
 
 .header {
   min-height: 100vh;
-  background: #000000 url("/img/main-bg.jpg") left bottom;
+  background: #000000 url("./img/main-bg.jpg") left bottom;
   background-size: cover;
 }
 .header .header-wrap {
@@ -140,7 +140,7 @@ body {
 }
 
 .statistic {
-  background: #000000 url("/img/statistic-bg.png") center no-repeat;
+  background: #000000 url("./img/statistic-bg.png") center no-repeat;
   background-size: cover;
   padding: 60px 0;
 }
