@@ -1,0 +1,338 @@
+h1, h2, h3, p, span {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+ul li {
+  margin-bottom: 5px;
+}
+
+h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+html {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+
+body {
+  margin: 0;
+}
+
+.logo {
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.logo-black {
+  color: #000000;
+}
+
+.header {
+  min-height: 100vh;
+  background: #000000 url("/img/main-bg.jpg") left bottom;
+  background-size: cover;
+}
+.header .header-wrap {
+  height: 100%;
+}
+.header .nav {
+  padding-top: 115px;
+  margin-bottom: 200px;
+}
+@media (max-width: 960px) {
+  .header .nav {
+    padding-top: 50px;
+    margin-bottom: 135px;
+  }
+}
+.header .nav span {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+.header .header-text {
+  color: #ffffff;
+  text-align: right;
+  margin-bottom: 200px;
+}
+.header .header-text h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.header .header-text p {
+  font-size: 2rem;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+.header .header-text span {
+  font-size: 1.6rem;
+  font-weight: 300;
+  font-style: italic;
+}
+.header .mouse {
+  max-height: 40px;
+}
+
+.about {
+  min-height: 150px;
+}
+.about .navbar {
+  padding: 15px 0;
+  -webkit-box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.13);
+  box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.13);
+}
+.about .navbar .nav-link {
+  display: block;
+  text-align: center;
+  color: #3b3b3b;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+.about .about-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px 0;
+}
+.about .about-wrap p {
+  color: #000000;
+}
+.about .about-wrap .bike-icon {
+  height: 25px;
+  margin-bottom: 10px;
+}
+.about .about-wrap p {
+  color: #3b3b3b;
+}
+
+.statistic {
+  background: #000000 url("/img/statistic-bg.png") center no-repeat;
+  background-size: cover;
+  padding: 60px 0;
+}
+.statistic h2 {
+  color: #ffffff;
+  text-align: center;
+}
+.statistic p {
+  color: #ffffff;
+}
+.statistic-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  text-align: center;
+}
+.statistic-item .stat-num {
+  font-size: 6rem;
+  font-weight: 600;
+}
+.statistic-item .stat-descr {
+  font-size: 1.28rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.products {
+  padding: 30px 0 40px 0;
+}
+.products p {
+  color: #000000;
+  padding-bottom: 30px;
+}
+.products .product-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+}
+.products .product-item .product-img {
+  width: 280px;
+  margin-bottom: 15px;
+}
+.products .product-item .product-name {
+  font-size: 2rem;
+  color: #3b3b3b;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.products .product-item .product-price {
+  font-size: 2.2rem;
+  font-weight: 500;
+  color: #3b3b3b;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+.products .product-item .learn-more {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #434242;
+}
+
+.team {
+  background-color: #ededed;
+  padding: 30px 0 45px 0;
+}
+.team .team-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 15px;
+}
+.team .team-item .team-img {
+  width: 180px;
+  margin-bottom: 15px;
+}
+.team .team-item .team-name {
+  color: #1e1e1e;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin-bottom: 5px;
+}
+.team .team-item .team-place {
+  font-size: 1.2rem;
+  color: #1e1e1e;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.showcase {
+  padding: 30px 0 45px 0;
+}
+.showcase .showcase-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media (max-width: 960px) {
+  .showcase .showcase-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+.showcase .showcase-wrap a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.showcase .showcase-wrap a .showcase-img {
+  width: 250px;
+}
+.showcase .follow-us {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  color: #3b3b3b;
+  text-align: center;
+  margin-top: 45px;
+  font-weight: 800;
+}
+.showcase .follow-us a {
+  color: #3b3b3b;
+}
+
+footer {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  padding: 30px 0 45px 0;
+}
+footer h2 {
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+footer h3 {
+  text-transform: uppercase;
+}
+footer .footer-link {
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 500;
+}
+footer .footer-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10px;
+}
+footer .footer-social li {
+  margin-right: 10px;
+}
+footer .footer-social li a {
+  color: #ffffff;
+  font-size: 3rem;
+}
