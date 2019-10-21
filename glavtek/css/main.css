@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box; }
+
+html {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 10px; }
+
+body {
+  margin: 0px;
+  padding: 0px; }
+
+h1, h2, h3, p, ul, a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none; }
+
+section {
+  padding: 50px 0; }
+  section h2 {
+    text-transform: uppercase;
+    font-size: 7rem;
+    font-weight: 400;
+    margin-bottom: 40px; }
+  section .section-content {
+    position: relative; }
+    section .section-content p {
+      font-size: 2rem;
+      font-weight: 400;
+      margin-bottom: 30px; }
+    section .section-content a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      width: 100%;
+      margin-bottom: 30px; }
+      section .section-content a img {
+        width: auto;
+        max-width: 100%;
+        max-height: 120px; }
+    section .section-content::before {
+      content: "";
+      position: absolute;
+      left: -20px;
+      height: 100%;
+      width: 3px;
+      background-color: #000000; }
+
+header {
+  height: 100vh;
+  background: #004b91 url("/img/main-bg.jpg") no-repeat center;
+  background-size: cover; }
+  header nav {
+    padding: 90px 0; }
+    header nav .logo {
+      color: #ffffff;
+      text-transform: uppercase;
+      font-size: 4rem;
+      font-weight: 700; }
+    header nav ul {
+      list-style: none;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      header nav ul li {
+        transition: 0.3s; }
+        header nav ul li a {
+          color: #ffffff;
+          font-size: 1.8rem;
+          text-transform: uppercase; }
+        header nav ul li:hover a {
+          color: #c8c9c9; }
+  header .main-text h1 {
+    padding: 126px 0;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 5.2rem;
+    font-weight: 400; }
+
+.feedback .feedback-slider .feedback-item {
+  text-align: center; }
+  .feedback .feedback-slider .feedback-item .feedback-text {
+    font-weight: 400;
+    font-size: 2.5rem;
+    margin-bottom: 40px; }
+  .feedback .feedback-slider .feedback-item .feedback-author {
+    font-weight: 900;
+    font-size: 2.5rem; }
+    .feedback .feedback-slider .feedback-item .feedback-author span {
+      font-weight: 400; }
+
+.contacts .contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px; }
+  .contacts .contact-item img {
+    width: 50px;
+    height: 50px; }
+  .contacts .contact-item span {
+    margin-left: 30px;
+    font-size: 2rem;
+    font-weight: 600; }
+  .contacts .contact-item a {
+    display: inline-block;
+    margin-left: 30px;
+    margin-bottom: 0;
+    color: #000000;
+    font-size: 2rem;
+    font-weight: 600; }
+  .contacts .contact-item:last-child {
+    margin-bottom: 0; }
+
+.scroll-top {
+  position: fixed;
+  right: 70px;
+  bottom: 70px;
+  width: 60px;
+  height: 60px;
+  border: 4px solid black;
+  border-radius: 50%;
+  padding: 1px; }
+
+/*# sourceMappingURL=main.css.map */
