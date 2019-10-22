@@ -93,7 +93,6 @@ header {
   transition: 0.4s;
   transform: translateY(56px);
 }
-
 .client-item p {
   margin-top: 10px;
   transition: 0.4s;
@@ -101,12 +100,10 @@ header {
   opacity: 0;
   visibility: hidden;
 }
-
 .client-item:hover:before, 
 .client-item:hover:after{
   transform: scale(1);
 }
-
 .client-item:hover a, 
 .client-item:hover p {
   transform: translateY(30px);
