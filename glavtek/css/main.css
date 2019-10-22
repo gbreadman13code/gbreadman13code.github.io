@@ -49,7 +49,7 @@ section {
 
 header {
   height: 100vh;
-  background: #004b91 url("./img/main-bg.jpg") no-repeat center;
+  background: #004b91 url("../img/main-bg.jpg") no-repeat center;
   background-size: cover; }
   header nav {
     padding: 90px 0; }
