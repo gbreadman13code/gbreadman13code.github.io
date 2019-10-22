@@ -96,7 +96,7 @@
     display: block;
     width: 20px;
     height: 20px;
-    background-image: url('./img/arrows/prev-arrow.png');
+    background-image: url('../img/arrows/prev-arrow.png');
     background-size: cover;
 
 }
@@ -120,7 +120,7 @@
     display: block;
     width: 20px;
     height: 20px;
-    background-image: url('./img/arrows/next-arrow.png');
+    background-image: url('../img/arrows/next-arrow.png');
     background-size: cover;
 }
 [dir='rtl'] .slick-next:before
