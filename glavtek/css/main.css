@@ -34,7 +34,7 @@ section {
       align-items: center;
       height: 100%;
       width: 100%;
-      margin-bottom: 30px; }
+      }
       section .section-content a img {
         width: auto;
         max-width: 100%;
@@ -79,6 +79,40 @@ header {
     color: #ffffff;
     font-size: 5.2rem;
     font-weight: 400; }
+
+.client-item {
+  color: #000000;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+.client-item a {
+  transition: 0.4s;
+  transform: translateY(56px);
+}
+
+.client-item p {
+  margin-top: 10px;
+  transition: 0.4s;
+  transform: translateY(-10px);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.client-item:hover:before, 
+.client-item:hover:after{
+  transform: scale(1);
+}
+
+.client-item:hover a, 
+.client-item:hover p {
+  transform: translateY(30px);
+  opacity: 1;
+  visibility: visible;
+}
 
 .feedback .feedback-slider .feedback-item {
   text-align: center; }

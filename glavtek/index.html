@@ -7,24 +7,26 @@
     <link rel="stylesheet" href="./css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="./css/slick-theme.css">
     <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./src/fullpage.css">
     <link rel="stylesheet" href="./css/main.css">
     <title>ГлавТэк</title>
 </head>
 <body>
     <header>
+        <div id="top"></div>
         <div class="container">
             <nav>
                 <div class="row">
                     <div class="col-xl-3">
-                        <a href="#" class="logo">Логотип</a>
+                        <a href="#" class="logo">Лого</a>
                     </div>
                     <div class="col-xl-8 offset-xl-1">
                         <ul>
-                            <li><a href="#" class="nav-link">О компании</a></li>
-                            <li><a href="#" class="nav-link">Вендоры</a></li>
-                            <li><a href="#" class="nav-link">Наши клиенты</a></li>
-                            <li><a href="#" class="nav-link">Отзывы</a></li>
-                            <li><a href="#" class="nav-link">Контакты</a></li>
+                            <li><a href="#about" class="nav-link">О компании</a></li>
+                            <li><a href="#vendors" class="nav-link">Вендоры</a></li>
+                            <li><a href="#clients" class="nav-link">Наши клиенты</a></li>
+                            <li><a href="#feedback" class="nav-link">Отзывы</a></li>
+                            <li><a href="#contacts" class="nav-link">Контакты</a></li>
                         </ul>
                     </div>
                 </div>
@@ -39,7 +41,7 @@
         </div>
     </header>
     <div class="container">
-        <section class="about">
+        <section class="about" id="about">
             <h2>О Компании</h2>
             <div class="section-content">
                 <p>Компания «ГЛАВТЭК» занимается поставками компьютеров, компьютерных комплектующих,
@@ -54,7 +56,7 @@
                 <p>На сегодняшний день поставлено 500 единиц продукции 200 производителей </p>
             </div>
         </section>
-        <section class="vendors">
+        <section class="vendors" id="vendors">
             <h2>Вендоры</h2>
             <div class="section-content">
                 <div class="row">
@@ -82,7 +84,7 @@
                 </div>
             </div>
         </section>
-        <section class="mission">
+        <section class="mission" id="mission">
             <h2>Миссия компании</h2>
             <div class="section-content">
                 <p>Наша молодая, быстроразвивающаяся компания за 3 года работы успела заслужить хорошую 
@@ -93,34 +95,104 @@
                 возможности для развития IT-рынка.</p>
             </div>
         </section>
-        <section class="clients">
+        <section class="clients" id="clients">
             <h2>Наши клиенты</h2>
             <div class="section-content">
                 <div class="row justify-content-between">
-                    <div class="col-xl-3"><a href="http://polyus.com/ru/" class="client" target="_blank"><img src="./img/clients/polus.png" alt="POLUS"></a></div>
-                    <div class="col-xl-3"><a href="http://www.rushydro.ru" class="client" target="_blank"><img src="./img/clients/rusgidro.png" alt="RUSGIDRO"></a></div>
-                    <div class="col-xl-3"><a href="https://www.cbr.ru" class="client" target="_blank"><img src="./img/clients/bankrf.png" alt="BANK RF"></a></div>
+                    <div class="col-xl-3">
+                        <div class="client-item">
+                            <a href="http://polyus.com/ru/" class="client" target="_blank"><img src="./img/clients/polus.png" alt="POLUS"></a>
+                            <p>Золотодобывающая компания "Полюс"</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3">
+                        <div class="client-item">
+                            <a href="http://www.rushydro.ru" class="client" target="_blank"><img src="./img/clients/rusgidro.png" alt="RUSGIDRO"></a>
+                            <p>ПАО "РусГидро"</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3">
+                        <div class="client-item">
+                            <a href="https://www.cbr.ru" class="client" target="_blank"><img src="./img/clients/bankrf.png" alt="BANK RF"></a>
+                            <p>Центральный банка Российской Федерации</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="row justify-content-between">
-                    <div class="col-xl-3"><a href="http://magnezit.ru/ru/" class="client" target="_blank"><img src="./img/clients/magnesit.png" alt="MAGNESIT"></a></div>
-                    <div class="col-xl-3"><a href="http://www.pfrf.ru" class="client" target="_blank"><img src="./img/clients/pfr.png" alt="PFR"></a></div>
-                    <div class="col-xl-3"><a href="https://www.sibur.ru" class="client" target="_blank"><img src="./img/clients/sibur.png" alt="SIBUR"></a></div>
+                    <div class="col-xl-3">
+                        <div class="client-item">
+                            <a href="http://magnezit.ru/ru/" class="client" target="_blank"><img src="./img/clients/magnesit.png" alt="MAGNESIT"></a>
+                            <p>Группа "МАГНЕЗИТ ООО"</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3">
+                        <div class="client-item">
+                            <a href="http://www.pfrf.ru" class="client" target="_blank"><img src="./img/clients/pfr.png" alt="PFR"></a>
+                            <p>Отделение Пенсионного фонда России по Красноярскому краю</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3">
+                        <div class="client-item">
+                            <a href="https://www.sibur.ru" class="client" target="_blank"><img src="./img/clients/sibur.png" alt="SIBUR"></a>
+                            <p>ПАО «СИБУР Холдинг»</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="row justify-content-between">
-                    <div class="col-xl-3"><a href="https://ksc.krasn.ru/contacts/" class="client" target="_blank"><img src="./img/clients/knc.png" alt="KNC"></a></div>
-                    <div class="col-xl-3"><a href="https://www.kja.aero" class="client" target="_blank"><img src="./img/clients/kja.png" alt="KJA"></a></div>
-                    <div class="col-xl-3"><a href="https://kraszdrav.ru" class="client" target="_blank"><img src="./img/clients/minzdrav.png" alt="MINZDRAV"></a></div>
-                    <div class="col-xl-3"><a href="https://www.taimyr24.ru" class="client" target="_blank"><img src="./img/clients/taymur.png" alt="TAIMYR"></a></div>
+                    <div class="col-xl-3">
+                        <div class="client-item">
+                            <a href="https://ksc.krasn.ru/contacts/" class="client" target="_blank"><img src="./img/clients/knc.png" alt="KNC"></a>
+                            <p>Красноярский научный центр Сибирского отделения Российской академии наук</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3">
+                        <div class="client-item">
+                            <a href="https://www.kja.aero" class="client" target="_blank"><img src="./img/clients/kja.png" alt="KJA"></a>
+                            <p>Аэропорт "Красноярск"</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3">
+                        <div class="client-item">
+                            <a href="https://kraszdrav.ru" class="client" target="_blank"><img src="./img/clients/minzdrav.png" alt="MINZDRAV"></a>
+                            <p>Министерство здравоохранения Красноярского края</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3">
+                        <div class="client-item">    
+                            <a href="https://www.taimyr24.ru" class="client" target="_blank"><img src="./img/clients/taymur.png" alt="TAIMYR"></a>
+                            <p>Администрация Таймырского Долгано-Ненецкого муниципального района</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="row justify-content-between">
-                    <div class="col-xl-3"><a href="https://szn24.ru" class="client" target="_blank"><img src="./img/clients/krkray.png" alt="KRKRAY"></a></div>
-                    <div class="col-xl-3"><a href="http://gpsu.su/o-fgup-gpsu" class="client" target="_blank"><img src="./img/clients/fsin.png" alt="FSIN"></a></div>
-                    <div class="col-xl-3"><a href="http://www.krasgtn.ru" class="client" target="_blank"><img src="./img/clients/stroynadzor.png" alt="STROYNADZOR"></a></div>
-                    <div class="col-xl-3"><a href="#" class="client" target="_blank"><img src="./img/clients/evenkiya.png" alt="EVENKIYA"></a></div>
+                    <div class="col-xl-3">
+                        <div class="client-item">
+                            <a href="https://szn24.ru" class="client" target="_blank"><img src="./img/clients/krkray.png" alt="KRKRAY"></a>
+                            <p>Краевое государственное казенное учреждение «Управление капитального строительства»</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3">
+                        <div class="client-item">
+                            <a href="http://gpsu.su/o-fgup-gpsu" class="client" target="_blank"><img src="./img/clients/fsin.png" alt="FSIN"></a>
+                            <p>Главное промышленно-строительное управление ФСИН России ФГУП</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3">
+                        <div class="client-item">
+                            <a href="http://www.krasgtn.ru" class="client" target="_blank"><img src="./img/clients/stroynadzor.png" alt="STROYNADZOR"></a>
+                            <p>Служба гостехнадзора Красноярского края</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-3">
+                        <div class="client-item">
+                            <a href="#" class="client" target="_blank"><img src="./img/clients/evenkiya.png" alt="EVENKIYA"></a>
+                            <p>Администрация Эвенкийского округа</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-        <section class="feedback">
+        <section class="feedback" id="feedback">
             <h2>Отзывы</h2>
             <div class="row">
                 <div class="col-xl-8 offset-xl-2">
@@ -147,7 +219,7 @@
                 </div>
             </div>
         </section>
-        <section class="contacts">
+        <section class="contacts" id="contacts">
             <h2>Контакты</h2>
             <div class="section-content">
                 <div class="row">
@@ -176,20 +248,21 @@
             </div>
         </section>
     </div>
-
-    <img src="./img/arrows/up-arrow.png" alt="scroll-top" class="scroll-top">
+    <a href="#top" class='scroll'><img src="./img/arrows/up-arrow.png" alt="scroll-top" class="scroll-top"></a>
 
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script src="./js/slick.min.js"></script>
     <script>
-            $('.feedback-slider').slick({
-                infinite: true,
-                dots: true,
-                arrows: true,
-                slidesToShow: 1,
-                slidesToScroll: 1,
-            });
-        </script>
+        $('.feedback-slider').slick({
+            infinite: true,
+            dots: true,
+            arrows: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+        });
+    </script>
+
+    <script src="./js/main.js"></script>
 </body>
 </html>
 
