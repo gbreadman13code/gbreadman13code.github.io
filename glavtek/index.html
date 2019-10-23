@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">    
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="./css/slick-theme.css">
@@ -12,15 +12,16 @@
     <title>ГлавТэк</title>
 </head>
 <body>
+    <div class="content-wrap">
     <header>
         <div id="top"></div>
         <div class="container">
             <nav>
                 <div class="row">
-                    <div class="col-xl-3">
+                    <div class="col-xl-3 col-lg-2 col-md-1 col-sm-2 col-2">
                         <a href="#" class="logo">Лого</a>
                     </div>
-                    <div class="col-xl-8 offset-xl-1">
+                    <div class="col-xl-8 offset-xl-1 col-lg-8 offset-lg-2 col-md-10 offset-md-1 d-none d-md-block">
                         <ul>
                             <li><a href="#about" class="nav-link">О компании</a></li>
                             <li><a href="#vendors" class="nav-link">Вендоры</a></li>
@@ -29,17 +30,27 @@
                             <li><a href="#contacts" class="nav-link">Контакты</a></li>
                         </ul>
                     </div>
+                    <div class="col-sm-2 offset-sm-8 col-2 d-md-none"><img src="./img/arrows/menu-button.png" alt="menu" class="burger-menu"></div>
+                    <ul class="mobile-menu">
+                        <li><a href="#about" class="nav-link">О компании</a></li>
+                        <li><a href="#vendors" class="nav-link">Вендоры</a></li>
+                        <li><a href="#clients" class="nav-link">Наши клиенты</a></li>
+                        <li><a href="#feedback" class="nav-link">Отзывы</a></li>
+                        <li><a href="#contacts" class="nav-link">Контакты</a></li>
+                        <li class="close"><img src="./img/arrows/close.png" alt="close"></li>
+                    </ul>
                 </div>
             </nav>
             <div class="main-text">
                 <div class="row">
-                    <div class="col-xl-9">
+                    <div class="col-xl-9 col-md-9">
                         <h1>Поставки вычислительной техники и оборудования</h1>
                     </div>
                 </div>
             </div>
         </div>
     </header>
+    
     <div class="container">
         <section class="about" id="about">
             <h2>О Компании</h2>
@@ -60,27 +71,27 @@
             <h2>Вендоры</h2>
             <div class="section-content">
                 <div class="row">
-                    <div class="col-xl-3"><a href="http://www.lenovo.com/ru/ru/" class="vendor" target="_blank"><img src="./img/vendors/lenovo.jpg" alt="LENOVO"></a></div>
-                    <div class="col-xl-3"><a href="https://www.panasonic.com/ru/" class="vendor" target="_blank"><img src="./img/vendors/panasonic.jpg" alt="PANASONIC"></a></div>
-                    <div class="col-xl-3"><a href="http://www.canon.ru/" class="vendor" target="_blank"><img src="./img/vendors/canon.jpg" alt="CANON"></a></div>
-                    <div class="col-xl-3"><a href="http://www.epson.com/" class="vendor" target="_blank"><img src="./img/vendors/epson.jpg" alt="EPSON"></a></div>
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-6"><a href="http://www.lenovo.com/ru/ru/" class="vendor" target="_blank"><img src="./img/vendors/lenovo.jpg" alt="LENOVO"></a></div>
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-6"><a href="https://www.panasonic.com/ru/" class="vendor" target="_blank"><img src="./img/vendors/panasonic.jpg" alt="PANASONIC"></a></div>
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-6"><a href="http://www.canon.ru/" class="vendor" target="_blank"><img src="./img/vendors/canon.jpg" alt="CANON"></a></div>
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-6"><a href="http://www.epson.com/" class="vendor" target="_blank"><img src="./img/vendors/epson.jpg" alt="EPSON"></a></div>
                 </div>
                 <div class="row">
-                    <div class="col-xl-2"><a href="https://www.apple.com/ru/" class="vendor" target="_blank"><img src="./img/vendors/apple.jpg" alt="APPLE"></a></div>
-                    <div class="col-xl-2"><a href="http://www.dell.ru/" class="vendor" target="_blank"><img src="./img/vendors/dell.jpg" alt="DELL"></a></div>
-                    <div class="col-xl-4"><a href="https://www.samsung.com/ru/" class="vendor" target="_blank"><img src="./img/vendors/samsung.png" alt="SAMSUNG"></a></div>
-                    <div class="col-xl-2"><a href="http://www.philips.ru/" class="vendor" target="_blank"><img src="./img/vendors/philips.png" alt="PHILIPS"></a></div>
-                    <div class="col-xl-2"><a href="http://www8.hp.com/ru/ru/home.html" class="vendor" target="_blank"><img src="./img/vendors/hp.png" alt="HP"></a></div>
+                    <div class="col-xl-2 col-lg-2 col-md-2 col-6"><a href="https://www.apple.com/ru/" class="vendor" target="_blank"><img src="./img/vendors/apple.jpg" alt="APPLE"></a></div>
+                    <div class="col-xl-2 col-lg-2 col-md-2 col-6"><a href="http://www.dell.ru/" class="vendor" target="_blank"><img src="./img/vendors/dell.jpg" alt="DELL"></a></div>
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-12"><a href="https://www.samsung.com/ru/" class="vendor" target="_blank"><img src="./img/vendors/samsung.png" alt="SAMSUNG"></a></div>
+                    <div class="col-xl-2 col-lg-2 col-md-2 col-6"><a href="http://www.philips.ru/" class="vendor" target="_blank"><img src="./img/vendors/philips.png" alt="PHILIPS"></a></div>
+                    <div class="col-xl-2 col-lg-2 col-md-2 col-6"><a href="http://www8.hp.com/ru/ru/home.html" class="vendor" target="_blank"><img src="./img/vendors/hp.png" alt="HP"></a></div>
                 </div>
                 <div class="row justify-content-between">
-                    <div class="col-xl-3"><a href="http://www.xerox.ru/" class="vendor" target="_blank"><img src="./img/vendors/xerox.jpg" alt="XEROX"></a></div>
-                    <div class="col-xl-3"><a href="http://ru.asus.com/" class="vendor" target="_blank"><img src="./img/vendors/asus.jpg" alt="ASUS"></a></div>
-                    <div class="col-xl-3"><a href="http://www.apc.com" class="vendor" target="_blank"><img src="./img/vendors/apc.jpg" alt="APC"></a></div>
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-4"><a href="http://www.xerox.ru/" class="vendor" target="_blank"><img src="./img/vendors/xerox.jpg" alt="XEROX"></a></div>
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-4"><a href="http://ru.asus.com/" class="vendor" target="_blank"><img src="./img/vendors/asus.jpg" alt="ASUS"></a></div>
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-4"><a href="http://www.apc.com" class="vendor" target="_blank"><img src="./img/vendors/apc.jpg" alt="APC"></a></div>
                 </div>
                 <div class="row justify-content-between">
-                    <div class="col-xl-3"><a href="http://www.acer.ru/ac/ru/RU/content/home" class="vendor" target="_blank"><img src="./img/vendors/acer.jpg" alt="ACER"></a></div>
-                    <div class="col-xl-3"><a href="http://www.toshiba.com.ru/" class="vendor" target="_blank"><img src="./img/vendors/toshiba.jpg" alt="TOSHIBA"></a></div>
-                    <div class="col-xl-3"><a href="www.panduit.com" class="vendor" target="_blank"><img src="./img/vendors/panduit.jpg" alt="PANDUIT"></a></div>
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-4"><a href="http://www.acer.ru/ac/ru/RU/content/home" class="vendor" target="_blank"><img src="./img/vendors/acer.jpg" alt="ACER"></a></div>
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-4"><a href="http://www.toshiba.com.ru/" class="vendor" target="_blank"><img src="./img/vendors/toshiba.jpg" alt="TOSHIBA"></a></div>
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-4"><a href="www.panduit.com" class="vendor" target="_blank"><img src="./img/vendors/panduit.jpg" alt="PANDUIT"></a></div>
                 </div>
             </div>
         </section>
@@ -99,19 +110,19 @@
             <h2>Наши клиенты</h2>
             <div class="section-content">
                 <div class="row justify-content-between">
-                    <div class="col-xl-3">
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-4">
                         <div class="client-item">
                             <a href="http://polyus.com/ru/" class="client" target="_blank"><img src="./img/clients/polus.png" alt="POLUS"></a>
                             <p>Золотодобывающая компания "Полюс"</p>
                         </div>
                     </div>
-                    <div class="col-xl-3">
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-4">
                         <div class="client-item">
                             <a href="http://www.rushydro.ru" class="client" target="_blank"><img src="./img/clients/rusgidro.png" alt="RUSGIDRO"></a>
                             <p>ПАО "РусГидро"</p>
                         </div>
                     </div>
-                    <div class="col-xl-3">
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-4">
                         <div class="client-item">
                             <a href="https://www.cbr.ru" class="client" target="_blank"><img src="./img/clients/bankrf.png" alt="BANK RF"></a>
                             <p>Центральный банка Российской Федерации</p>
@@ -119,19 +130,19 @@
                     </div>
                 </div>
                 <div class="row justify-content-between">
-                    <div class="col-xl-3">
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-4">
                         <div class="client-item">
                             <a href="http://magnezit.ru/ru/" class="client" target="_blank"><img src="./img/clients/magnesit.png" alt="MAGNESIT"></a>
                             <p>Группа "МАГНЕЗИТ ООО"</p>
                         </div>
                     </div>
-                    <div class="col-xl-3">
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-4">
                         <div class="client-item">
                             <a href="http://www.pfrf.ru" class="client" target="_blank"><img src="./img/clients/pfr.png" alt="PFR"></a>
                             <p>Отделение Пенсионного фонда России по Красноярскому краю</p>
                         </div>
                     </div>
-                    <div class="col-xl-3">
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-4">
                         <div class="client-item">
                             <a href="https://www.sibur.ru" class="client" target="_blank"><img src="./img/clients/sibur.png" alt="SIBUR"></a>
                             <p>ПАО «СИБУР Холдинг»</p>
@@ -139,25 +150,25 @@
                     </div>
                 </div>
                 <div class="row justify-content-between">
-                    <div class="col-xl-3">
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-3">
                         <div class="client-item">
                             <a href="https://ksc.krasn.ru/contacts/" class="client" target="_blank"><img src="./img/clients/knc.png" alt="KNC"></a>
                             <p>Красноярский научный центр Сибирского отделения Российской академии наук</p>
                         </div>
                     </div>
-                    <div class="col-xl-3">
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-3">
                         <div class="client-item">
                             <a href="https://www.kja.aero" class="client" target="_blank"><img src="./img/clients/kja.png" alt="KJA"></a>
                             <p>Аэропорт "Красноярск"</p>
                         </div>
                     </div>
-                    <div class="col-xl-3">
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-3">
                         <div class="client-item">
                             <a href="https://kraszdrav.ru" class="client" target="_blank"><img src="./img/clients/minzdrav.png" alt="MINZDRAV"></a>
                             <p>Министерство здравоохранения Красноярского края</p>
                         </div>
                     </div>
-                    <div class="col-xl-3">
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-3">
                         <div class="client-item">    
                             <a href="https://www.taimyr24.ru" class="client" target="_blank"><img src="./img/clients/taymur.png" alt="TAIMYR"></a>
                             <p>Администрация Таймырского Долгано-Ненецкого муниципального района</p>
@@ -165,25 +176,25 @@
                     </div>
                 </div>
                 <div class="row justify-content-between">
-                    <div class="col-xl-3">
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-3">
                         <div class="client-item">
                             <a href="https://szn24.ru" class="client" target="_blank"><img src="./img/clients/krkray.png" alt="KRKRAY"></a>
                             <p>Краевое государственное казенное учреждение «Управление капитального строительства»</p>
                         </div>
                     </div>
-                    <div class="col-xl-3">
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-3">
                         <div class="client-item">
                             <a href="http://gpsu.su/o-fgup-gpsu" class="client" target="_blank"><img src="./img/clients/fsin.png" alt="FSIN"></a>
                             <p>Главное промышленно-строительное управление ФСИН России ФГУП</p>
                         </div>
                     </div>
-                    <div class="col-xl-3">
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-3">
                         <div class="client-item">
                             <a href="http://www.krasgtn.ru" class="client" target="_blank"><img src="./img/clients/stroynadzor.png" alt="STROYNADZOR"></a>
                             <p>Служба гостехнадзора Красноярского края</p>
                         </div>
                     </div>
-                    <div class="col-xl-3">
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-3">
                         <div class="client-item">
                             <a href="#" class="client" target="_blank"><img src="./img/clients/evenkiya.png" alt="EVENKIYA"></a>
                             <p>Администрация Эвенкийского округа</p>
@@ -223,7 +234,7 @@
             <h2>Контакты</h2>
             <div class="section-content">
                 <div class="row">
-                    <div class="col-xl-6">
+                    <div class="col-xl-6 col-lg-6 col-md-6">
                         <div class="contact-item">
                             <img src="./img/contacts/phone.png" alt="phone">
                             <a href="tel:+73912150043">+7 (391) 215-00-43</a>
@@ -241,15 +252,17 @@
                             <span>660043</span>
                         </div>
                     </div>
-                    <div class="col-xl-6">
+                    <div class="col-xl-6 col-lg-6 col-md-6">
                         <a href="https://sbis.ru/contragents/2466173242/246601001" target="_blank"><img src="./img/contacts/sbis.jpg" alt="SBIS"></a>
                     </div>
                 </div>
             </div>
         </section>
     </div>
-    <a href="#top" class='scroll'><img src="./img/arrows/up-arrow.png" alt="scroll-top" class="scroll-top"></a>
+    </div>
+    <a href="#top" class='scroll d-none d-md-block'><img src="./img/arrows/up-arrow.png" alt="scroll-top" class="scroll-top"></a>
 
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script src="./js/slick.min.js"></script>
     <script>
@@ -259,7 +272,14 @@
             arrows: true,
             slidesToShow: 1,
             slidesToScroll: 1,
-        });
+            responsive: [
+    {
+      breakpoint: 577,
+      settings: {
+        arrows: false
+      }
+    }],
+});
     </script>
 
     <script src="./js/main.js"></script>
