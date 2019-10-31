@@ -1,0 +1,237 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+}
+@media (max-width: 576px) {
+  html {
+    font-size: 7px;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.new-text {
+  color: #01DF3A;
+  text-transform: uppercase;
+}
+
+.onair-text {
+  color: #00BFFF;
+  text-transform: uppercase;
+}
+
+.archive-text {
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.adv {
+  display: inline-block;
+  text-transform: uppercase;
+  color: red;
+  padding: 5px;
+  border: 1px solid red;
+}
+
+.new-block {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: #01DF3A;
+}
+
+.onair-block {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: #00BFFF;
+}
+
+.archive-block {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: #000000;
+}
+
+.red {
+  color: red;
+}
+
+.button {
+  padding: 10px 20px;
+  border: 1px solid grey;
+}
+
+.wrap {
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.wrap .choose {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 500px;
+}
+@media (max-width: 576px) {
+  .wrap .choose {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+.wrap .choose a {
+  font-size: 3rem;
+  text-decoration: none;
+  color: grey;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  margin-bottom: 10px;
+}
+.wrap .choose a:hover {
+  background-color: grey;
+  color: #fff;
+}
+
+header {
+  background-color: #0040FF;
+}
+header .back-button {
+  display: block;
+  padding: 20px 0;
+  width: 100%;
+  font-size: 3rem;
+  text-decoration: none;
+  color: #fff;
+}
+header .back-button:hover {
+  background-color: #2E64FE;
+}
+
+.todo h2 {
+  font-size: 6rem;
+  text-transform: uppercase;
+  color: #0040FF;
+}
+.todo .evening {
+  list-style: none;
+  padding: 0;
+}
+.todo .evening li {
+  font-size: 3.5rem;
+}
+.todo .evening li i {
+  margin-right: 10px;
+  width: 50px;
+  text-align: center;
+}
+@media (max-width: 576px) {
+  .todo .evening {
+    font-size: 2rem;
+  }
+}
+.todo .legend {
+  list-style: none;
+  padding: 0;
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media (max-width: 576px) {
+  .todo .legend {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 15px;
+  }
+}
+.todo .legend li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 2rem;
+}
+.todo .legend li div {
+  margin-right: 20px;
+}
+.todo .typog h3 {
+  font-size: 4rem;
+  color: red;
+  position: relative;
+}
+.todo .typog h3::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -220px;
+  height: 1px;
+  width: 200px;
+  background-color: red;
+}
+.todo .typog h3::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 130px;
+  height: 1px;
+  width: 2000px;
+  background-color: red;
+}
+.todo .typog ul {
+  list-style: none;
+}
+.todo .typog ul li {
+  margin: 5px 0;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+.todo .typog .explonation {
+  width: 100%;
+  height: auto;
+  background-color: #E6E6E6;
+  padding: 40px;
+}
+.todo .typog .explonation p {
+  font-size: 1.8rem;
+  color: #000;
+}
+
+/*# sourceMappingURL=main.css.map */
