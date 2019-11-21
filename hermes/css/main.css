@@ -1,0 +1,213 @@
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 10px;
+}
+
+body, p, h1, h2, h3 {
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  padding: 40px 0;
+}
+section h2 {
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+input {
+  outline: none;
+  border: none;
+  padding: 15px 25px;
+  font-size: 1.4rem;
+  color: #111111;
+}
+
+header {
+  padding: 15px 0;
+  width: 100%;
+  background-color: #183243;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+header .header-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+header .header-wrap .logo {
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: auto;
+  cursor: pointer;
+}
+header .header-wrap .logo .logo-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 205px;
+  text-decoration: none;
+  color: #ffffff;
+}
+header .header-wrap .logo .logo-text p {
+  font-size: 3rem;
+  margin: 0;
+  padding: 0;
+  letter-spacing: -1px;
+}
+header .header-wrap .logo .logo-text span {
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  position: relative;
+}
+header .header-wrap .logo .logo-text span::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0px;
+  bottom: 1px;
+  width: 292px;
+  height: 1px;
+  background-color: #fff;
+}
+header .header-wrap .logo .logo-img {
+  max-height: 53px;
+}
+header .header-wrap .menu-list {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style: none;
+}
+header .header-wrap .menu-list li a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 2.2rem;
+}
+
+.main-page {
+  background: url("../img/car/car3.1.jpg") center top no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+.main-page .main-page-wrap {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.main-page .main-page-wrap h1 {
+  font-size: 5rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 110px 0;
+}
+.main-page .main-page-wrap form {
+  padding: 70px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.main-page .main-page-wrap form input:first-child {
+  border-top-left-radius: 15px;
+}
+.main-page .main-page-wrap form input:last-child {
+  border-bottom-right-radius: 15px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.main-page .main-page-wrap form input:last-child:hover {
+  background-color: #a3a3a3;
+  color: #ffffff;
+}
+
+.about-wrap h3 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 400;
+  padding: 10px 0;
+}
+.about-wrap .about-info-wrap {
+  height: 85%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.about-wrap .about-info-wrap .about-info-item div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 6rem;
+}
+.about-wrap .about-info-wrap .about-info-item span {
+  font-size: 1.8rem;
+}
+.about-wrap .about-feedback-wrap {
+  padding-top: 50px;
+  width: 198px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 2;
+}
+.about-wrap .about-feedback-wrap .about-feedback-item img {
+  height: 354px;
+}
+
+.empty {
+  position: absolute;
+  top: 37px;
+  left: 155px;
+  height: 500px;
+  z-index: 1;
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="/css/slick-theme.css">
+    <link rel="stylesheet" href="/css/slick.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Гермес-авто | Автоперевозки по России</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-wrap">
+                <a href="#" class="logo">
+                    <div class="logo-text">
+                        <p>ГЕРМЕС-АВТО</p>
+                        <span>автоперевозки по всей россии</span>
+                    </div>
+                    <img class="logo-img" src="/img/logo.png" alt="">
+                </a>
+                <ul class="menu-list">
+                    <li><a href="#" class="menu-link">О компании</a></li>
+                    <li><a href="#" class="menu-link">Цены</a></li>
+                    <li><a href="#" class="menu-link">Отзывы</a></li>
+                    <li><a href="#" class="menu-link">Документы</a></li>
+                    <li><a href="#" class="menu-link">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section class="main-page">
+        <div class="container">
+           <div class="main-page-wrap">
+                <h1>Перевезем вашу машину&nbsp;выгодно и в срок</h1>
+                <form action="">
+                    <input type="text" placeholder="Ваше имя">
+                    <input type="text" placeholder="Номер телефона">
+                    <input type="text" placeholder="Откуда едем">
+                    <!-- <select name="from" id="">
+                        <option value="">Владивосток</option>
+                        <option value="">Хабаровск</option>
+                        <option value="">Чита</option>
+                        <option value="">Улан-Удэ</option>
+                        <option value="">Иркутск</option>
+                        <option value="">Красноярск</option>
+                        <option value="">Кемерово</option>
+                        <option value="">Новосибирск</option>
+                        <option value="">Омск</option>
+                        <option value="">Тюмень</option>
+                        <option value="">Екатеринбург</option>
+                        <option value="">Челябинск</option>
+                        <option value="">Уфа</option>
+                        <option value="">Тольятти</option>
+                        <option value="">Краснодар</option>
+                        <option value="">Москва</option>
+                        <option value="">Санкт-Петербург</option>
+                    </select> -->
+                    <input type="text" placeholder="Куда едем">
+                    <input type="submit" value="Отправить заявку">
+                </form>
+           </div>
+        </div>
+    </section>
+    <section class="about">
+        <div class="container">
+            <div class="about-wrap">
+                <h2>О компании</h2>
+                <div class="row">
+                    <div class="col-xl-6">
+                        <h3>В цифрах</h3>
+                        <div class="about-info-wrap">
+                            <div class="about-info-item">
+                                <div>15</div>
+                                <span>лет на рынке</span>
+                            </div>
+                            <div class="about-info-item">
+                                <div>20000</div>
+                                <span>выполненных заказов</span>
+                            </div>
+                            <div class="about-info-item">
+                                <div>17</div>
+                                <span>городов страны</span>
+                            </div>
+                            <div class="about-info-item">
+                                <div>11</div>
+                                <span>автовозов</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6">
+                        <h3>В отзывах</h3>
+                        <img src="/img/empty-iphone.png" alt="" class="empty">
+                        <div class="about-feedback-wrap">
+                            <div class="about-feedback-item">
+                                <img src="/img/testim/1.jpg" alt="">
+                            </div>
+                            <div class="about-feedback-item">
+                                <img src="/img/testim/1.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="/js/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.about-feedback-wrap').slick({
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: true
+            });
+        });
+    </script>
+</body>
+</html>
