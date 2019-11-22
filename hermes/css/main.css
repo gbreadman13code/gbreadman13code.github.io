@@ -325,7 +325,7 @@ header .header-wrap .menu-list li a {
 }
 
 .contact-us {
-  background: url("/img/volvo.png") center no-repeat;
+  background: url("../img/volvo.png") center no-repeat;
 }
 .contact-us .contact-us-wrap .contact-list {
   list-style: none;
