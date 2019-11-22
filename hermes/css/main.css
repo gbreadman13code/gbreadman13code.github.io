@@ -151,6 +151,9 @@ header .header-wrap .menu-list li a {
   color: #ffffff;
 }
 
+.about {
+  background: url("/img/volvo1.png") 210% center no-repeat;
+}
 .about-wrap h3 {
   text-align: center;
   font-size: 3rem;
@@ -172,6 +175,13 @@ header .header-wrap .menu-list li a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+.about-wrap .about-info-wrap .about-info-item {
+  text-align: center;
+  width: 100%;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+  background: inherit;
 }
 .about-wrap .about-info-wrap .about-info-item div {
   display: -webkit-box;
@@ -210,4 +220,186 @@ header .header-wrap .menu-list li a {
   left: 155px;
   height: 500px;
   z-index: 1;
+}
+
+.our-geo {
+  min-height: 100vh;
+  background: #B4EAEB;
+  background: white;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.1)), color-stop(3%, #b4eaeb), color-stop(97%, #b4eaeb), to(white));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, #b4eaeb 3%, #b4eaeb 97%, white 100%);
+}
+.our-geo .our-geo-wrap {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 100%;
+}
+.our-geo .our-geo-wrap .map {
+  width: 80%;
+  height: auto;
+}
+.our-geo .our-geo-wrap .map-icon {
+  width: 34px;
+  height: 34px;
+  position: absolute;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.our-geo .our-geo-wrap .map-icon:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+.our-geo .our-geo-wrap .map-icon1 {
+  top: 505px;
+  right: 110px;
+}
+.our-geo .our-geo-wrap .map-icon2 {
+  top: 560px;
+  right: 340px;
+}
+.our-geo .our-geo-wrap .map-icon3 {
+  top: 570px;
+  right: 390px;
+}
+.our-geo .our-geo-wrap .map-icon4 {
+  top: 550px;
+  right: 430px;
+}
+.our-geo .our-geo-wrap .map-icon5 {
+  top: 610px;
+  right: 100px;
+}
+.our-geo .our-geo-wrap .map-icon6 {
+  top: 520px;
+  right: 540px;
+}
+.our-geo .our-geo-wrap .map-icon7 {
+  top: 545px;
+  right: 605px;
+}
+.our-geo .our-geo-wrap .map-icon8 {
+  top: 550px;
+  right: 635px;
+}
+.our-geo .our-geo-wrap .map-icon9 {
+  top: 515px;
+  right: 720px;
+}
+.our-geo .our-geo-wrap .map-icon10 {
+  top: 480px;
+  right: 775px;
+}
+.our-geo .our-geo-wrap .map-icon11 {
+  top: 495px;
+  right: 825px;
+}
+.our-geo .our-geo-wrap .map-icon12 {
+  top: 465px;
+  right: 830px;
+}
+.our-geo .our-geo-wrap .map-icon13 {
+  top: 485px;
+  right: 875px;
+}
+.our-geo .our-geo-wrap .map-icon14 {
+  top: 470px;
+  right: 935px;
+}
+.our-geo .our-geo-wrap .map-icon15 {
+  top: 500px;
+  right: 1120px;
+}
+.our-geo .our-geo-wrap .map-icon16 {
+  top: 290px;
+  right: 1000px;
+}
+.our-geo .our-geo-wrap .map-icon17 {
+  top: 370px;
+  right: 1000px;
+}
+
+.contact-us {
+  background: url("/img/volvo.png") center no-repeat;
+}
+.contact-us .contact-us-wrap .contact-list {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 30px;
+}
+.contact-us .contact-us-wrap .contact-list li {
+  font-size: 1.8rem;
+  margin: 15px 0;
+}
+.contact-us .contact-us-wrap .contact-list li i {
+  width: 30px;
+  height: 30px;
+}
+.contact-us .contact-us-wrap .contact-list li a {
+  text-decoration: none;
+  color: #111;
+}
+.contact-us form {
+  padding-top: 30px;
+}
+.contact-us form input {
+  width: 100%;
+  border: 1px solid #111;
+  margin-bottom: 15px;
+}
+.contact-us form input:first-child {
+  border-top-left-radius: 15px;
+}
+.contact-us form input:last-child {
+  border-bottom-right-radius: 15px;
+}
+
+.docs .docs-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.docs .docs-wrap .doc-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.docs .docs-wrap .doc-item h3 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+.docs .docs-wrap .doc-item .download {
+  margin-top: 20px;
+}
+.docs .docs-wrap .doc-item img {
+  width: 200px;
+  height: 282px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-box-shadow: 0px 0px 22px -5px rgba(0, 0, 0, 0.61);
+  box-shadow: 0px 0px 22px -5px rgba(0, 0, 0, 0.61);
+}
+.docs .docs-wrap .doc-item img:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
 }
