@@ -15,12 +15,13 @@ section h2 {
   text-align: center;
   font-size: 4rem;
   font-weight: 600;
+  text-transform: uppercase;
 }
 
 input {
   outline: none;
   border: none;
-  padding: 15px 25px;
+  padding: 10px 25px;
   font-size: 1.4rem;
   color: #111111;
 }
@@ -152,7 +153,20 @@ header .header-wrap .menu-list li a {
 }
 
 .about {
-  background: url("../img/volvo1.png") 210% center no-repeat;
+  background: url("/img/volvo1.png") 210% center no-repeat;
+}
+.about-wrap {
+  position: relative;
+}
+.about-wrap-decor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 40rem;
+  line-height: 30rem;
+  font-weight: 900;
+  z-index: 1;
+  color: rgba(214, 214, 214, 0.3);
 }
 .about-wrap h3 {
   text-align: center;
@@ -161,6 +175,7 @@ header .header-wrap .menu-list li a {
   padding: 10px 0;
 }
 .about-wrap .about-info-wrap {
+  z-index: 5;
   height: 85%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -223,11 +238,23 @@ header .header-wrap .menu-list li a {
 }
 
 .our-geo {
+  position: relative;
   min-height: 100vh;
   background: #B4EAEB;
   background: white;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.1)), color-stop(3%, #b4eaeb), color-stop(97%, #b4eaeb), to(white));
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, #b4eaeb 3%, #b4eaeb 97%, white 100%);
+}
+.our-geo-decor {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  text-transform: uppercase;
+  font-size: 8rem;
+  z-index: 100;
+  color: #ffffff;
+  font-weight: 600;
+  text-shadow: 0px 4px 0px #969696;
 }
 .our-geo .our-geo-wrap {
   position: relative;
@@ -243,89 +270,127 @@ header .header-wrap .menu-list li a {
   width: 80%;
   height: auto;
 }
-.our-geo .our-geo-wrap .map-icon {
-  width: 34px;
-  height: 34px;
+.our-geo .our-geo-wrap .city {
   position: absolute;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  width: auto;
+  height: 54px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   cursor: pointer;
 }
-.our-geo .our-geo-wrap .map-icon:hover {
-  -webkit-transform: scale(1.3);
-          transform: scale(1.3);
+.our-geo .our-geo-wrap .city p {
+  font-size: 1.4rem;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 1px;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
-.our-geo .our-geo-wrap .map-icon1 {
-  top: 505px;
-  right: 110px;
+.our-geo .our-geo-wrap .city .map-icon {
+  width: 34px;
+  height: 34px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
 }
-.our-geo .our-geo-wrap .map-icon2 {
-  top: 560px;
-  right: 340px;
-}
-.our-geo .our-geo-wrap .map-icon3 {
-  top: 570px;
-  right: 390px;
-}
-.our-geo .our-geo-wrap .map-icon4 {
-  top: 550px;
-  right: 430px;
-}
-.our-geo .our-geo-wrap .map-icon5 {
-  top: 610px;
-  right: 100px;
-}
-.our-geo .our-geo-wrap .map-icon6 {
-  top: 520px;
-  right: 540px;
-}
-.our-geo .our-geo-wrap .map-icon7 {
-  top: 545px;
-  right: 605px;
-}
-.our-geo .our-geo-wrap .map-icon8 {
-  top: 550px;
-  right: 635px;
-}
-.our-geo .our-geo-wrap .map-icon9 {
-  top: 515px;
-  right: 720px;
-}
-.our-geo .our-geo-wrap .map-icon10 {
+.our-geo .our-geo-wrap .city1 {
   top: 480px;
-  right: 775px;
+  right: 93px;
 }
-.our-geo .our-geo-wrap .map-icon11 {
-  top: 495px;
-  right: 825px;
+.our-geo .our-geo-wrap .city2 {
+  top: 530px;
+  right: 323px;
 }
-.our-geo .our-geo-wrap .map-icon12 {
-  top: 465px;
-  right: 830px;
+.our-geo .our-geo-wrap .city3 {
+  top: 540px;
+  right: 373px;
 }
-.our-geo .our-geo-wrap .map-icon13 {
+.our-geo .our-geo-wrap .city4 {
+  top: 520px;
+  right: 413px;
+}
+.our-geo .our-geo-wrap .city5 {
+  top: 580px;
+  right: 70px;
+}
+.our-geo .our-geo-wrap .city6 {
+  top: 490px;
+  right: 523px;
+}
+.our-geo .our-geo-wrap .city7 {
+  top: 515px;
+  right: 588px;
+}
+.our-geo .our-geo-wrap .city8 {
+  top: 520px;
+  right: 618px;
+}
+.our-geo .our-geo-wrap .city9 {
   top: 485px;
+  right: 703px;
+}
+.our-geo .our-geo-wrap .city10 {
+  top: 450px;
+  right: 758px;
+}
+.our-geo .our-geo-wrap .city11 {
+  top: 465px;
+  right: 805px;
+}
+.our-geo .our-geo-wrap .city12 {
+  top: 430px;
+  right: 813px;
+}
+.our-geo .our-geo-wrap .city13 {
+  top: 470px;
   right: 875px;
 }
-.our-geo .our-geo-wrap .map-icon14 {
-  top: 470px;
-  right: 935px;
+.our-geo .our-geo-wrap .city14 {
+  top: 460px;
+  right: 918px;
 }
-.our-geo .our-geo-wrap .map-icon15 {
-  top: 500px;
-  right: 1120px;
+.our-geo .our-geo-wrap .city15 {
+  top: 480px;
+  right: 1095px;
 }
-.our-geo .our-geo-wrap .map-icon16 {
-  top: 290px;
+.our-geo .our-geo-wrap .city16 {
+  top: 260px;
+  right: 960px;
+}
+.our-geo .our-geo-wrap .city17 {
+  top: 340px;
   right: 1000px;
 }
-.our-geo .our-geo-wrap .map-icon17 {
-  top: 370px;
-  right: 1000px;
+.our-geo .our-geo-wrap .city:hover .map-icon {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+.our-geo .our-geo-wrap .city:hover p {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+.our-geo .our-geo-wrap .city:hover {
+  z-index: 5;
 }
 
 .contact-us {
-  background: url("../img/volvo.png") center no-repeat;
+  background: url("/img/volvo.png") center no-repeat;
+}
+.contact-us h2 {
+  text-align: left;
 }
 .contact-us .contact-us-wrap .contact-list {
   list-style: none;
@@ -349,6 +414,10 @@ header .header-wrap .menu-list li a {
 .contact-us .contact-us-wrap .contact-list li a {
   text-decoration: none;
   color: #111;
+}
+.contact-us .contact-us-wrap .contact-list li .color {
+  background-color: yellow;
+  border-radius: 5px;
 }
 .contact-us form {
   padding-top: 30px;
@@ -390,6 +459,7 @@ header .header-wrap .menu-list li a {
 }
 .docs .docs-wrap .doc-item .download {
   margin-top: 20px;
+  color: #111111;
 }
 .docs .docs-wrap .doc-item img {
   width: 200px;
@@ -402,4 +472,42 @@ header .header-wrap .menu-list li a {
 .docs .docs-wrap .doc-item img:hover {
   -webkit-transform: scale(1.3);
           transform: scale(1.3);
+}
+
+footer {
+  padding: 15px 0;
+  background-color: #183243;
+}
+footer .footer-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+footer .footer-wrap .footer-nav {
+  list-style: none;
+}
+footer .footer-wrap .footer-nav li a {
+  color: #ffffff;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+footer .footer-wrap .to-main {
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+footer .footer-wrap .made {
+  text-align: right;
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+footer .footer-wrap .made a {
+  color: #c6d8fa;
 }
