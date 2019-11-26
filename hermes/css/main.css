@@ -153,7 +153,7 @@ header .header-wrap .menu-list li a {
 }
 
 .about {
-  background: url("./img/volvo1.png") 210% center no-repeat;
+  background: url("../img/volvo1.png") 210% center no-repeat;
 }
 .about-wrap {
   position: relative;
@@ -387,7 +387,7 @@ header .header-wrap .menu-list li a {
 }
 
 .contact-us {
-  background: url("./img/volvo.png") center no-repeat;
+  background: url("../img/volvo.png") center no-repeat;
 }
 .contact-us h2 {
   text-align: left;
