@@ -257,7 +257,7 @@ header .header-wrap .menu-list li a {
 }
 
 .about {
-  background: url("/img/volvo1.png") 210% center no-repeat;
+  background: url("/img/volvo1.png") 213% center no-repeat;
 }
 @media (max-width: 1199px) {
   .about {
@@ -316,6 +316,7 @@ header .header-wrap .menu-list li a {
   -webkit-transition: 0.7s;
   transition: 0.7s;
   background: inherit;
+  margin-bottom: 30px;
 }
 .about-wrap .about-info-wrap .about-info-item div {
   display: -webkit-box;
@@ -647,6 +648,69 @@ header .header-wrap .menu-list li a {
 .docs .docs-wrap .doc-item img:hover {
   -webkit-transform: scale(1.3);
           transform: scale(1.3);
+}
+
+.why-we {
+  background-color: #183243;
+}
+.why-we h2 {
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+.why-we .why-we-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.why-we .why-we-wrap .why-we-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  font-family: "Noto Sans", sans-serif;
+  width: 24%;
+  padding: 20px 20px;
+  -webkit-box-shadow: 0 0 10px rgba(1, 1, 1, 0.3);
+          box-shadow: 0 0 10px rgba(1, 1, 1, 0.3);
+  border-radius: 10px;
+  background-color: #344f61;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.why-we .why-we-wrap .why-we-item:hover {
+  -webkit-transform: scale(1.07);
+          transform: scale(1.07);
+}
+.why-we .why-we-wrap .why-we-item p {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #ffffff;
+  vertical-align: middle;
+}
+.why-we .why-we-wrap .why-we-item img {
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.gallary .gallary-block .gallary-item img {
+  min-height: 200px;
+  max-height: 200px;
+  min-width: 300px;
+  max-width: 300px;
+  margin: 0 auto;
 }
 
 footer {
