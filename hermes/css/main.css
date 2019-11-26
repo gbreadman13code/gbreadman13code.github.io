@@ -2,8 +2,18 @@ html {
   font-family: "Roboto", sans-serif;
   font-size: 10px;
 }
+@media (max-width: 1199px) {
+  html {
+    font-size: 8px;
+  }
+}
+@media (max-width: 575px) {
+  html {
+    font-size: 6px;
+  }
+}
 
-body, p, h1, h2, h3 {
+body, p, h1, h2, h3, ul {
   margin: 0;
   padding: 0;
 }
@@ -25,6 +35,11 @@ input {
   font-size: 1.4rem;
   color: #111111;
 }
+@media (max-width: 991px) {
+  input {
+    padding: 7px 10px;
+  }
+}
 
 header {
   padding: 15px 0;
@@ -38,6 +53,43 @@ header .header-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+@media (max-width: 767px) {
+  header .header-wrap {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+header .header-wrap .burger-menu {
+  width: 30px;
+  height: 4px;
+  background-color: #fff;
+  border-radius: 3px;
+  position: relative;
+}
+header .header-wrap .burger-menu::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 30px;
+  height: 4px;
+  background-color: #fff;
+  border-radius: 3px;
+}
+header .header-wrap .burger-menu::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -8px;
+  width: 30px;
+  height: 4px;
+  background-color: #fff;
+  border-radius: 3px;
 }
 header .header-wrap .logo {
   text-decoration: none;
@@ -65,6 +117,16 @@ header .header-wrap .logo .logo-text {
   text-decoration: none;
   color: #ffffff;
 }
+@media (max-width: 1199px) {
+  header .header-wrap .logo .logo-text {
+    width: 160px;
+  }
+}
+@media (max-width: 575px) {
+  header .header-wrap .logo .logo-text {
+    width: 120px;
+  }
+}
 header .header-wrap .logo .logo-text p {
   font-size: 3rem;
   margin: 0;
@@ -86,8 +148,28 @@ header .header-wrap .logo .logo-text span::before {
   height: 1px;
   background-color: #fff;
 }
+@media (max-width: 1199px) {
+  header .header-wrap .logo .logo-text span::before {
+    width: 230px;
+  }
+}
+@media (max-width: 575px) {
+  header .header-wrap .logo .logo-text span::before {
+    width: 173px;
+  }
+}
 header .header-wrap .logo .logo-img {
   max-height: 53px;
+}
+@media (max-width: 1199px) {
+  header .header-wrap .logo .logo-img {
+    max-height: 42px;
+  }
+}
+@media (max-width: 575px) {
+  header .header-wrap .logo .logo-img {
+    max-height: 32px;
+  }
 }
 header .header-wrap .menu-list {
   width: 100%;
@@ -97,12 +179,20 @@ header .header-wrap .menu-list {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   list-style: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 header .header-wrap .menu-list li a {
   text-decoration: none;
   color: #fff;
   text-transform: uppercase;
   font-size: 2.2rem;
+}
+@media (max-width: 1199px) {
+  header .header-wrap .menu-list li a {
+    font-size: 1.8rem;
+  }
 }
 
 .main-page {
@@ -129,6 +219,12 @@ header .header-wrap .menu-list li a {
   text-transform: uppercase;
   padding: 110px 0;
 }
+@media (max-width: 575px) {
+  .main-page .main-page-wrap h1 {
+    font-size: 4.5rem;
+    padding: 70px 0;
+  }
+}
 .main-page .main-page-wrap form {
   padding: 70px 0;
   display: -webkit-box;
@@ -137,6 +233,14 @@ header .header-wrap .menu-list li a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+@media (max-width: 767px) {
+  .main-page .main-page-wrap form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 .main-page .main-page-wrap form input:first-child {
   border-top-left-radius: 15px;
@@ -153,7 +257,17 @@ header .header-wrap .menu-list li a {
 }
 
 .about {
-  background: url("../img/volvo1.png") 210% center no-repeat;
+  background: url("/img/volvo1.png") 210% center no-repeat;
+}
+@media (max-width: 1199px) {
+  .about {
+    background: url("/img/volvo1.png") 550% 100% no-repeat;
+  }
+}
+@media (max-width: 991px) {
+  .about {
+    background: url("/img/volvo1-mirror.png") 4200% 100% no-repeat;
+  }
 }
 .about-wrap {
   position: relative;
@@ -167,6 +281,11 @@ header .header-wrap .menu-list li a {
   font-weight: 900;
   z-index: 1;
   color: rgba(214, 214, 214, 0.3);
+}
+@media (max-width: 575px) {
+  .about-wrap-decor {
+    font-size: 30rem;
+  }
 }
 .about-wrap h3 {
   text-align: center;
@@ -236,6 +355,30 @@ header .header-wrap .menu-list li a {
   height: 500px;
   z-index: 1;
 }
+@media (max-width: 1199px) {
+  .empty {
+    top: 36px;
+    left: 110px;
+  }
+}
+@media (max-width: 991px) {
+  .empty {
+    top: 29px;
+    left: 51px;
+  }
+}
+@media (max-width: 767px) {
+  .empty {
+    top: 29px;
+    left: 140px;
+  }
+}
+@media (max-width: 575px) {
+  .empty {
+    top: 29px;
+    left: calc( 50% - 131px );
+  }
+}
 
 .our-geo {
   position: relative;
@@ -255,6 +398,11 @@ header .header-wrap .menu-list li a {
   color: #ffffff;
   font-weight: 600;
   text-shadow: 0px 4px 0px #969696;
+}
+@media (max-width: 1199px) {
+  .our-geo-decor {
+    font-size: 6rem;
+  }
 }
 .our-geo .our-geo-wrap {
   position: relative;
@@ -389,6 +537,21 @@ header .header-wrap .menu-list li a {
 .contact-us {
   background: url("../img/volvo.png") center no-repeat;
 }
+@media (max-width: 991px) {
+  .contact-us {
+    background: url("../img/volvo.png") -60% center no-repeat;
+  }
+}
+@media (max-width: 767px) {
+  .contact-us {
+    background: url("../img/volvo.png") -112% center no-repeat;
+  }
+}
+@media (max-width: 575px) {
+  .contact-us {
+    background: none;
+  }
+}
 .contact-us h2 {
   text-align: left;
 }
@@ -407,9 +570,19 @@ header .header-wrap .menu-list li a {
   font-size: 1.8rem;
   margin: 15px 0;
 }
+@media (max-width: 1199px) {
+  .contact-us .contact-us-wrap .contact-list li {
+    margin: 5px 0;
+  }
+}
 .contact-us .contact-us-wrap .contact-list li i {
   width: 30px;
   height: 30px;
+}
+@media (max-width: 575px) {
+  .contact-us .contact-us-wrap .contact-list li i {
+    height: 13px;
+  }
 }
 .contact-us .contact-us-wrap .contact-list li a {
   text-decoration: none;
@@ -440,6 +613,8 @@ header .header-wrap .menu-list li a {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .docs .docs-wrap .doc-item {
   display: -webkit-box;
