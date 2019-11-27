@@ -121,6 +121,7 @@ header .header-wrap .mobile-menu-button .burger-menu-line3-active {
           transform: translateY(-10px) rotate(-45deg);
 }
 header .header-wrap .mobile-menu {
+  position: fixed;
   width: 300px;
   height: 100vh;
   background-color: #fff;
@@ -428,6 +429,11 @@ header .header-wrap .menu-list li a {
     font-size: 6rem;
   }
 }
+@media (min-width: 1441px) {
+  .our-geo-decor {
+    font-size: 13rem;
+  }
+}
 .our-geo .our-geo-wrap {
   position: relative;
   display: -webkit-box;
@@ -482,69 +488,171 @@ header .header-wrap .menu-list li a {
   top: 480px;
   right: 93px;
 }
+@media (min-width: 1441px) {
+  .our-geo .our-geo-wrap .city1 {
+    top: 894px;
+    right: 197px;
+  }
+}
 .our-geo .our-geo-wrap .city2 {
   top: 530px;
   right: 323px;
+}
+@media (min-width: 1441px) {
+  .our-geo .our-geo-wrap .city2 {
+    top: 966px;
+    right: 600px;
+  }
 }
 .our-geo .our-geo-wrap .city3 {
   top: 540px;
   right: 373px;
 }
+@media (min-width: 1441px) {
+  .our-geo .our-geo-wrap .city3 {
+    top: 992px;
+    right: 689px;
+  }
+}
 .our-geo .our-geo-wrap .city4 {
   top: 520px;
   right: 413px;
+}
+@media (min-width: 1441px) {
+  .our-geo .our-geo-wrap .city4 {
+    top: 980px;
+    right: 772px;
+  }
 }
 .our-geo .our-geo-wrap .city5 {
   top: 580px;
   right: 70px;
 }
+@media (min-width: 1441px) {
+  .our-geo .our-geo-wrap .city5 {
+    top: 1068px;
+    right: 163px;
+  }
+}
 .our-geo .our-geo-wrap .city6 {
   top: 490px;
   right: 523px;
+}
+@media (min-width: 1441px) {
+  .our-geo .our-geo-wrap .city6 {
+    top: 943px;
+    right: 952px;
+  }
 }
 .our-geo .our-geo-wrap .city7 {
   top: 515px;
   right: 588px;
 }
+@media (min-width: 1441px) {
+  .our-geo .our-geo-wrap .city7 {
+    top: 983px;
+    right: 1068px;
+  }
+}
 .our-geo .our-geo-wrap .city8 {
   top: 520px;
   right: 618px;
+}
+@media (min-width: 1441px) {
+  .our-geo .our-geo-wrap .city8 {
+    top: 968px;
+    right: 1125px;
+  }
 }
 .our-geo .our-geo-wrap .city9 {
   top: 485px;
   right: 703px;
 }
+@media (min-width: 1441px) {
+  .our-geo .our-geo-wrap .city9 {
+    top: 958px;
+    right: 1295px;
+  }
+}
 .our-geo .our-geo-wrap .city10 {
   top: 450px;
   right: 758px;
+}
+@media (min-width: 1441px) {
+  .our-geo .our-geo-wrap .city10 {
+    top: 873px;
+    right: 1375px;
+  }
 }
 .our-geo .our-geo-wrap .city11 {
   top: 465px;
   right: 805px;
 }
+@media (min-width: 1441px) {
+  .our-geo .our-geo-wrap .city11 {
+    top: 891px;
+    right: 1470px;
+  }
+}
 .our-geo .our-geo-wrap .city12 {
   top: 430px;
   right: 813px;
+}
+@media (min-width: 1441px) {
+  .our-geo .our-geo-wrap .city12 {
+    top: 834px;
+    right: 1456px;
+  }
 }
 .our-geo .our-geo-wrap .city13 {
   top: 470px;
   right: 875px;
 }
+@media (min-width: 1441px) {
+  .our-geo .our-geo-wrap .city13 {
+    top: 868px;
+    right: 1568px;
+  }
+}
 .our-geo .our-geo-wrap .city14 {
   top: 460px;
   right: 918px;
+}
+@media (min-width: 1441px) {
+  .our-geo .our-geo-wrap .city14 {
+    top: 851px;
+    right: 1668px;
+  }
 }
 .our-geo .our-geo-wrap .city15 {
   top: 480px;
   right: 1095px;
 }
+@media (min-width: 1441px) {
+  .our-geo .our-geo-wrap .city15 {
+    top: 900px;
+    right: 1977px;
+  }
+}
 .our-geo .our-geo-wrap .city16 {
   top: 260px;
   right: 960px;
 }
+@media (min-width: 1441px) {
+  .our-geo .our-geo-wrap .city16 {
+    top: 506px;
+    right: 1758px;
+  }
+}
 .our-geo .our-geo-wrap .city17 {
   top: 340px;
   right: 1000px;
+}
+@media (min-width: 1441px) {
+  .our-geo .our-geo-wrap .city17 {
+    top: 660px;
+    right: 1788px;
+  }
 }
 .our-geo .our-geo-wrap .city:hover .map-icon {
   -webkit-transform: scale(1);

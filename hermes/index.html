@@ -242,12 +242,12 @@
                     </div>
                 </div>
                 <div class="col-xl-4 col-lg-4 col-md-7 col-sm-10 col-12">
-                    <form action="">
-                        <input type="text" placeholder="Ваше имя">
-                        <input type="text" placeholder="Номер телефона">
-                        <input type="text" placeholder="Ваша машина">
-                        <input type="text" placeholder="Откуда поедем">
-                        <input type="text" placeholder="Куда поедем">
+                    <form action="./php/mail.php" method="POST">
+                        <input type="text" placeholder="Ваше имя" name='user_name'>
+                        <input type="text" placeholder="Номер телефона" name='user_phone'>
+                        <input type="text" placeholder="Ваша машина" name="user_car">
+                        <input type="text" placeholder="Откуда поедем" name="from">
+                        <input type="text" placeholder="Куда поедем" name="to">
                         <input type="submit" value="Отправить заявку">
                     </form>
                 </div>
@@ -357,7 +357,7 @@
                 <li><a href="">Галерея</a></li>
             </ul>
             <a href="#" class="to-main">Наверх</a>
-            <p class="made">Сделано в <a href="https://gbreadman13code.github.io" target="_blank">Красноярске. <br> Кодинг по-сибирски</a></p>        
+            <p class="made">Сделано в <a href="https://gbreadman13code.gitgub.io">Красноярске. <br> Кодинг по-сибирски</a></p>        
         </div>
         </div>
     </footer>
