@@ -157,6 +157,11 @@ header .header-wrap .mobile-menu ul li a {
 header .header-wrap .logo img {
   width: 300px;
 }
+@media (max-width: 767px) {
+  header .header-wrap .logo img {
+    width: 70px
+  }
+}
 header .header-wrap .menu-list {
   width: 100%;
   display: -webkit-box;
