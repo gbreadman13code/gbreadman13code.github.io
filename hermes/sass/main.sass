@@ -1,0 +1,524 @@
+html
+ font-family: 'Roboto', sans-serif 
+ font-size: 10px
+ @media (max-width: 1199px)
+  font-size: 8px
+ @media (max-width: 575px)
+  font-size: 6px  
+body, p, h1, h2, h3, ul
+ margin: 0
+ padding: 0
+
+
+
+section
+ padding: 40px 0
+ h2
+  text-align: center
+  font-size: 4rem
+  font-weight: 600
+  text-transform: uppercase
+  margin-bottom: 10px
+
+input
+ outline: none
+ border: none
+ padding: 10px 25px
+ font-size: 1.4rem
+ color: #111111
+ @media (max-width: 991px)
+  padding: 7px 10px
+
+header
+ padding: 15px 0
+ width: 100%
+ background-color: #183243
+ position: absolute
+ top: 0
+ left: 0
+ .header-wrap
+  display: flex
+  @media (max-width: 767px)
+   justify-content: space-between
+   align-items: center 
+  .burger-menu
+   width: 30px
+   height: 4px
+   background-color: #fff
+   border-radius: 3px
+   position: relative
+   &::after
+    content: ''
+    position: absolute
+    left: 0
+    top: 8px
+    width: 30px
+    height: 4px
+    background-color: #fff
+    border-radius: 3px
+   &::before
+    content: ''
+    position: absolute
+    left: 0
+    top: -8px
+    width: 30px
+    height: 4px
+    background-color: #fff
+    border-radius: 3px
+  .logo
+   text-decoration: none
+   display: flex
+   width: auto
+   cursor: pointer
+   .logo-text
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    justify-content: flex-start
+    width: 205px
+    text-decoration: none
+    color: #ffffff
+    @media (max-width: 1199px)
+     width: 160px
+    @media (max-width: 575px)
+     width: 120px
+    p
+     font-size: 3rem
+     margin: 0
+     padding: 0
+     letter-spacing: -1px
+    span
+     text-transform: uppercase
+     font-size: 1.1rem
+     position: relative
+     &::before
+      content: ''
+      display: block
+      position: absolute
+      left: 0px
+      bottom: 1px
+      width: 292px
+      height: 1px
+      background-color: #fff
+      @media (max-width: 1199px)
+       width: 230px
+      @media (max-width: 575px)
+       width: 173px
+   .logo-img
+    max-height: 53px
+    @media (max-width: 1199px)
+     max-height: 42px
+    @media (max-width: 575px)
+     max-height: 32px
+  .menu-list
+   width: 100%
+   display: flex
+   justify-content: space-around
+   list-style: none
+   align-items: center
+   li
+    a
+     text-decoration: none
+     color: #fff
+     text-transform: uppercase
+     font-size: 2.2rem
+     @media (max-width: 1199px)
+      font-size: 1.8rem
+       
+.main-page
+ background: url('../img/car/car3.1.jpg') center top no-repeat
+ background-size: cover
+ height: 100vh
+ .main-page-wrap
+  min-height: 100vh
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  h1
+   font-size: 5rem
+   color: #ffffff
+   text-transform: uppercase
+   padding: 110px 0 
+   @media (max-width: 575px)
+    font-size: 4.5rem
+    padding: 70px 0
+  form
+   padding: 70px 0
+   display: flex
+   justify-content: space-between
+   @media (max-width: 767px)
+    flex-direction: column
+   input
+    &:first-child
+     border-top-left-radius: 15px
+    &:last-child
+     border-bottom-right-radius: 15px
+     transition: 0.3s
+     cursor: pointer
+     &:hover
+      background-color: #a3a3a3
+      color: #ffffff   
+
+.about
+ background: url('/img/volvo1.png') 213% center no-repeat
+ @media (max-width: 1199px)
+  background: url('/img/volvo1.png') 550% 100% no-repeat
+ @media (max-width: 991px) 
+  background: url('/img/volvo1-mirror.png') 4200% 100% no-repeat
+ &-wrap
+  position: relative
+  &-decor
+   position: absolute
+   top: 0
+   left: 0
+   font-size: 40rem
+   line-height: 30rem
+   font-weight: 900
+   z-index: 1
+   color: rgba(214, 214, 214, 0.3)
+   @media (max-width: 575px)
+    font-size: 30rem
+  h3
+   text-align: center
+   font-size: 3rem
+   font-weight: 400
+   padding: 10px 0
+  .about-info-wrap
+   z-index: 5
+   height: 85%
+   display: flex
+   flex-direction: column
+   align-items: center
+   justify-content: space-between
+   .about-info-item
+    text-align: center
+    width: 100%
+    transition: 0.7s
+    background: inherit
+    margin-bottom: 30px
+    div
+     display: flex
+     align-items: center
+     justify-content: center
+     font-size: 6rem
+    span
+     font-size: 1.8rem
+  .about-feedback-wrap
+   padding-top: 50px
+   width: 198px
+   margin: 0 auto
+   display: flex
+   justify-content: center
+   z-index: 2
+   .about-feedback-item
+    img
+     height: 354px
+
+.partners
+ background: url('../img/natural-bg.jpg') center 39% no-repeat
+ background-size: cover
+ margin-top: 40px
+ .partners-wrap 
+  .partners-item
+   height: 178px
+   display: flex
+   flex-direction: column
+   align-items: center
+   justify-content: center
+   img
+    width: 155px
+    margin: 0 auto
+    margin-bottom: 10px
+   p
+    font-size: 1.7em
+    font-weight: 700
+
+.empty
+ position: absolute
+ top: 37px
+ left: 155px
+ height: 500px
+ z-index: 1
+ @media (max-width: 1199px)
+  top: 36px
+  left: 110px
+ @media (max-width: 991px)
+  top: 29px
+  left: 51px
+ @media (max-width: 767px)
+  top: 29px
+  left: 140px 
+ @media (max-width: 575px)
+  top: 29px
+  left: calc( 50% - 131px )
+
+.our-geo
+ padding-top: 0
+ position: relative
+ min-height: 100vh
+ background: #B4EAEB
+ background: rgb(255,255,255)
+ background: linear-gradient(0deg, rgba(255,255,255,0.1) 0%, rgba(180,234,235,1) 3%, rgba(180,234,235,1) 97%, rgba(255,255,255,1) 100%)
+ &-decor
+  position: absolute
+  top: 50px
+  left: 50px
+  text-transform: uppercase
+  font-size: 8rem
+  z-index: 100
+  color: #ffffff
+  font-weight: 600
+  text-shadow: 0px 4px 0px rgba(150, 150, 150, 1)
+  @media (max-width: 1199px)
+   font-size: 6rem
+ .our-geo-wrap
+  position: relative
+  display: flex
+  justify-content: flex-end
+  width: 100%
+  .map
+   width: 80%
+   height: auto
+  .city
+   position: absolute
+   width: auto
+   height: 54px
+   display: flex
+   flex-direction: column
+   align-items: center
+   cursor: pointer
+   p
+    font-size: 1.4rem
+    color: #fff
+    font-weight: 700
+    letter-spacing: 1px
+    transform: scale(0)
+    transition: 0.5s
+   .map-icon
+    width: 34px
+    height: 34px
+    transition: 0.5s
+    transform: scale(1.4)
+    transform-origin: bottom center
+   &1
+    top: 480px
+    right: 93px
+   &2
+    top: 530px
+    right: 323px
+   &3
+    top: 540px
+    right: 373px
+   &4
+    top: 520px
+    right: 413px
+   &5
+    top: 580px
+    right: 70px
+   &6
+    top: 490px
+    right: 523px
+   &7
+    top: 515px
+    right: 588px
+   &8
+    top: 520px
+    right: 618px
+   &9
+    top: 485px
+    right: 703px
+   &10
+    top: 450px
+    right: 758px
+   &11
+    top: 465px
+    right: 805px
+   &12
+    top: 430px
+    right: 813px
+   &13
+    top: 470px
+    right: 875px
+   &14
+    top: 460px
+    right: 918px
+   &15
+    top: 480px
+    right: 1095px
+   &16
+    top: 260px
+    right: 960px
+   &17
+    top: 340px
+    right: 1000px
+   &:hover .map-icon
+    transform: scale(1)
+   &:hover p
+    transform: scale(1)
+   &:hover
+     z-index: 5
+
+.contact-us
+ background: url('../img/volvo.png') center no-repeat
+ @media (max-width: 991px)
+  background: url('../img/volvo.png') -60% center no-repeat 
+ @media (max-width: 767px)
+  background: url('../img/volvo.png') -112% center no-repeat
+ @media (max-width: 575px)
+  background: none
+ h2
+  text-align: left
+ .contact-us-wrap
+  .contact-list
+   list-style: none
+   display: flex
+   flex-direction: column
+   padding-top: 30px
+   li
+    font-size: 1.8rem
+    margin: 15px 0
+    @media (max-width: 1199px)
+     margin: 5px 0
+      
+    i
+     width: 30px
+     height: 30px
+     @media (max-width: 575px)
+      height: 13px
+    a
+     text-decoration: none
+     color: #111
+    .color
+     background-color: yellow
+     border-radius: 5px
+ form
+  padding-top: 30px
+  input
+   width: 100%
+   border: 1px solid #111
+   margin-bottom: 15px
+   &:first-child
+    border-top-left-radius: 15px
+   &:last-child
+    border-bottom-right-radius: 15px
+
+.docs
+ position: relative
+ .shapes-right
+  height: 100%
+  width: 300px
+  background: url('../img/shapes.jpg') right bottom no-repeat
+  position: absolute
+  top: 0
+  right: 0
+  z-index: 1
+  clip-path: polygon(61% 0, 100% 0, 100% 100%, 0% 100%)
+ .shapes-left
+  height: 100%
+  width: 300px
+  background: url('../img/shapes.jpg') left top no-repeat
+  position: absolute
+  top: 0
+  left: 0
+  z-index: 1
+  clip-path: polygon(61% 0, 0 0, 0% 100%)
+ .docs-wrap
+  display: flex
+  justify-content: space-around
+  flex-wrap: wrap
+  .doc-item
+   display: flex
+   flex-direction: column
+   align-items: center
+   z-index: 2
+   h3
+    font-size: 1.8rem
+    margin-bottom: 20px
+   .download
+    margin-top: 20px
+    color: #111111
+   img
+    width: 200px
+    height: 282px
+    transition: 0.3s
+    -webkit-box-shadow: 0px 0px 22px -5px rgba(0,0,0,0.61)
+    -moz-box-shadow: 0px 0px 22px -5px rgba(0,0,0,0.61)
+    box-shadow: 0px 0px 22px -5px rgba(0,0,0,0.61)
+    &:hover
+     transform: scale(1.3)
+
+.why-we
+ background-color: #183243
+ h2
+  color: #ffffff
+  margin-bottom: 40px
+ .why-we-wrap
+   display: flex 
+   justify-content: center
+   flex-wrap: wrap
+   .why-we-item
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: flex-start
+    font-family: 'Noto Sans', sans-serif
+    min-width: 224px
+    max-width: 224px
+    padding: 20px 20px
+    box-shadow: 0 0 10px rgba(1, 1, 1, 0.3)
+    border-radius: 10px
+    background-color: #344f61
+    transition: 0.3s
+    cursor: pointer
+    margin-bottom: 20px
+    &:hover
+     transform: scale(1.07)
+    p
+     text-align: center
+     font-size: 1.8rem
+     color: #ffffff
+     vertical-align: middle
+    img
+     height: 100px
+     margin-bottom: 10px
+
+.gallary
+ .gallary-block
+   display: flex
+   align-items: center
+   justify-content: center
+  .gallary-item
+   img
+    min-height: 200px 
+    max-height: 200px
+    min-width: 300px
+    max-width: 300px
+    margin: 0 auto
+    
+footer
+ padding: 15px 0
+ background-color: #183243
+ .footer-wrap
+  display: flex
+  justify-content: space-between
+  align-items: center
+  .footer-nav
+   list-style: none
+   li
+    a
+     color: #ffffff
+     font-size: 1.2rem
+     text-decoration: none
+  .to-main
+   text-decoration: none
+   color: #ffffff
+   text-transform: uppercase
+   font-size: 2rem
+  .made
+   text-align: right
+   font-size: 1.2rem
+   color: #ffffff
+   a
+    color: #c6d8fa
+
+
