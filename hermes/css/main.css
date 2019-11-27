@@ -159,9 +159,8 @@ header .header-wrap .logo img {
 }
 @media (max-width: 767px) {
   header .header-wrap .logo img {
-    width: 70px
+    width: 200px;
   }
-}
 header .header-wrap .menu-list {
   width: 100%;
   display: -webkit-box;
