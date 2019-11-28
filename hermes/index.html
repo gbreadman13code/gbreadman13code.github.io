@@ -54,8 +54,8 @@
                 <form action="">
                     <input type="text" placeholder="Ваше имя">
                     <input type="text" placeholder="Номер телефона">
-                    <input type="text" placeholder="Откуда едем">
-                    <input type="text" placeholder="Куда едем">
+                    <input type="text" placeholder="Откуда">
+                    <input type="text" placeholder="Куда">
                     <input type="submit" value="Отправить заявку">
                 </form>
            </div>
@@ -232,11 +232,40 @@
                 <div class="col-xl-4 col-lg-4 col-md-6 col-sm-10 col-12">
                     <div class="contact-us-wrap">
                         <ul class="contact-list">
-                            <li><i class="fas fa-phone-alt"></i><a href="tel:+7(908) 026-68-79">8 (908) 026-68-79</a></li>
-                            <li><i class="fas fa-map-marker-alt"></i>г. Красноярск, ул. Гайдашовка, 30, ОФИС 2-05А</li>
-                            <li><i class="fas fa-envelope"></i><a href="mailto:germes-avto13@mail.ru">germes-avto13@mail.ru</a></li>
-                            <li><i class="fas fa-file-invoice"></i> <span class="color">Клиентам без НДС:</span> Общество с ограниченной отвественностью "ГЕРМЕС-АВТО" 
-                                <br> <span class="color">Клиентам с НДС:</span> Общество с ограниченной ответственностью "МАЯК-АВТО"
+                            <li>
+                                <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+                                <div class="contact-text-wrap">
+                                    <p class="contact-name">ТЕЛЕФОН</p>
+                                    <p class="contact-content"><a href="tel:+7(908) 026-68-79">8 (908) 026-68-79</a></p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                                <div class="contact-text-wrap">
+                                    <p class="contact-name">АДРЕС</p>
+                                    <p class="contact-content">г. Красноярск, ул. Гайдашовка, 30, ОФИС 2-05А</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                                <div class="contact-text-wrap">
+                                    <p class="contact-name">E-MAIL</p>
+                                    <p class="contact-content"><a href="mailto:germes-avto13@mail.ru">germes-avto13@mail.ru</a></p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="contact-icon"><i class="fas fa-file-invoice"></i></div>
+                                <div class="contact-text-wrap">
+                                    <p class="contact-name">ООО "ГЕРМЕС-АВТО"</p>
+                                    <p class="contact-content">ИНН/КПП - 2462213448/246201001 <br> ОГРН - 1102468045129</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="contact-icon"><i class="fas fa-file-invoice"></i></div>
+                                <div class="contact-text-wrap">
+                                    <p class="contact-name">ООО "МАЯК-АВТО"</p>
+                                    <p class="contact-content">ИНН/КПП - 2465316459/246501001 <br> ОГРН - 1142468042980</p>
+                                </div>
                             </li>
                         </ul>
                     </div>
@@ -245,9 +274,9 @@
                     <form action="./php/mail.php" method="POST">
                         <input type="text" placeholder="Ваше имя" name='user_name'>
                         <input type="text" placeholder="Номер телефона" name='user_phone'>
-                        <input type="text" placeholder="Ваша машина" name="user_car">
-                        <input type="text" placeholder="Откуда поедем" name="from">
-                        <input type="text" placeholder="Куда поедем" name="to">
+                        <input type="text" placeholder="Ваш автомобиль" name="user_car">
+                        <input type="text" placeholder="Откуда" name="from">
+                        <input type="text" placeholder="Куда" name="to">
                         <input type="submit" value="Отправить заявку">
                     </form>
                 </div>
@@ -285,7 +314,7 @@
     </section>
     <section class="why-we">   
         <div class="container">
-            <h2>Почему люди <br> выбирают нас</h2>
+            <h2>Почему клиенты <br> выбирают нас</h2>
             <div class="why-we-wrap">
                 <div class="why-we-item">
                     <img src="./img/why-we-icons/debt.png" alt="debt">
