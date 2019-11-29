@@ -5,4 +5,32 @@ $(document).ready(function () {
         $('.burger-menu-line2').toggleClass('burger-menu-line2-active');
         $('.burger-menu-line3').toggleClass('burger-menu-line3-active');
     });
+    $('.question1').click(function () { 
+        $('.answer1').toggleClass('slide-up');
+        $('.answer-wrap1').toggleClass('answer-wrap-empty')
+    });
+    $('.question2').click(function () { 
+        $('.answer2').toggleClass('slide-up');
+        $('.answer-wrap2').toggleClass('answer-wrap-empty')
+    });
+    $('.question3').click(function () { 
+        $('.answer3').toggleClass('slide-up');
+        $('.answer-wrap3').toggleClass('answer-wrap-empty')
+    });
+    $('.question4').click(function () { 
+        $('.answer4').toggleClass('slide-up');
+        $('.answer-wrap4').toggleClass('answer-wrap-empty')
+    });
+    $('.question5').click(function () { 
+        $('.answer5').toggleClass('slide-up');
+        $('.answer-wrap5').toggleClass('answer-wrap-empty')
+    });
+    $('.question6').click(function () { 
+        $('.answer6').toggleClass('slide-up');
+        $('.answer-wrap6').toggleClass('answer-wrap-empty')
+    });
+    $('.question7').click(function () { 
+        $('.answer7').toggleClass('slide-up');
+        $('.answer-wrap7').toggleClass('answer-wrap-empty')
+    });
 });
