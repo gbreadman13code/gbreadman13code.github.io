@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   font-family: "Rubik", sans-serif;
   font-size: 10px;
@@ -16,6 +17,10 @@ html {
 body, p, h1, h2, h3, ul {
   margin: 0;
   padding: 0;
+}
+
+ul {
+  list-style: none;
 }
 
 .all-wrap {
@@ -418,10 +423,18 @@ header .header-wrap .menu-list li a {
   padding-top: 0;
   position: relative;
   min-height: auto;
-  background: #B4EAEB;
-  background: white;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.1)), color-stop(3%, #b4eaeb), color-stop(97%, #b4eaeb), to(white));
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.1) 0%, #b4eaeb 3%, #b4eaeb 97%, white 100%);
+  background: url("../img/geo-bg.jpg") center no-repeat;
+  background-size: cover;
+}
+.our-geo .shapes-geo {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  bottom: -40px;
+  width: 500px;
+  -webkit-clip-path: polygon(0 0, 78% 0, 100% 100%, 0% 100%);
+          clip-path: polygon(0 0, 78% 0, 100% 100%, 0% 100%);
+  background-color: #183243;
 }
 .our-geo-decor {
   position: absolute;
@@ -441,7 +454,7 @@ header .header-wrap .menu-list li a {
 }
 @media (min-width: 1441px) {
   .our-geo-decor {
-    font-size: 13rem;
+    font-size: 8rem;
   }
 }
 .our-geo .our-geo-wrap {
@@ -455,12 +468,12 @@ header .header-wrap .menu-list li a {
   width: 100%;
 }
 .our-geo .our-geo-wrap .map {
-  width: 1152px;
+  width: 1212px;
   height: auto;
 }
 @media (min-width: 2027px) {
   .our-geo .our-geo-wrap .map {
-    width: 1700px;
+    width: 1792px;
   }
 }
 .our-geo .our-geo-wrap .city {
@@ -546,7 +559,7 @@ header .header-wrap .menu-list li a {
 @media (min-width: 2027px) {
   .our-geo .our-geo-wrap .city5 {
     top: 890px;
-    right: 123px;
+    right: 147px;
   }
 }
 .our-geo .our-geo-wrap .city6 {
@@ -663,7 +676,7 @@ header .header-wrap .menu-list li a {
   top: 340px;
   right: 1000px;
 }
-@media (min-width: 1441px) {
+@media (min-width: 2027px) {
   .our-geo .our-geo-wrap .city17 {
     top: 549px;
     right: 1477px;
@@ -782,9 +795,9 @@ header .header-wrap .menu-list li a {
 
 .docs {
   position: relative;
-  background: #b1e6ff;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(177, 230, 255, 0.1)), to(#236591));
-  background: linear-gradient(180deg, rgba(177, 230, 255, 0.1) 0%, #236591 100%);
+  background: white;
+  background: -webkit-gradient(linear, left top, left bottom, from(white), to(#8e9ba3));
+  background: linear-gradient(180deg, white 0%, #8e9ba3 100%);
 }
 .docs .shapes-right {
   height: 100%;
@@ -852,38 +865,100 @@ header .header-wrap .menu-list li a {
           transform: scale(1.3);
 }
 
-.faq .faq-wrap .faq-item {
-  width: 350px;
-  overflow-y: hidden;
-  height: auto;
+.question {
+  background: #8e9ba3;
+  background: -webkit-gradient(linear, left top, left bottom, from(#8e9ba3), to(#4a5f6c));
+  background: linear-gradient(180deg, #8e9ba3 0%, #4a5f6c 100%);
+  position: relative;
 }
-.faq .faq-wrap .faq-item:first-child {
-  border-top-left-radius: 10px;
+.question .shapes-center {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-clip-path: polygon(0 0, calc( 100% - 300px ) 0, 100% 100%, 300px 100%);
+          clip-path: polygon(0 0, calc( 100% - 300px ) 0, 100% 100%, 300px 100%);
+  background: url("../img/road-for-shapes1.jpg") center no-repeat;
+  background-size: cover;
 }
-.faq .faq-wrap .faq-item:last-child {
-  border-bottom-left-radius: 10px;
+@media (max-width: 964px) {
+  .question .shapes-center {
+    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+  }
 }
-.faq .faq-wrap .faq-item .question {
-  display: block;
-  padding: 10px 20px;
+
+.tab {
+  border-radius: 3px;
+  color: #fff;
+  margin-bottom: 10px;
   background-color: #183243;
-  color: #fff;
-  z-index: 1000;
   position: relative;
 }
-.faq .faq-wrap .faq-item .answer-wrap {
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+.tab input, .tab-content {
+  display: none;
 }
-.faq .faq-wrap .faq-item .answer-wrap .answer {
+.tab-title {
+  padding: 10px;
   display: block;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+}
+.tab-title::after {
+  content: "+";
+  float: right;
+}
+.tab-content {
   padding: 10px 20px;
-  background-color: #234a63;
+  font-size: 1.4rem;
+  background-color: #415b6d;
+}
+.tab :checked + .tab-title {
+  background-color: #183243;
+  border-radius: 3px 3px 0 0;
   color: #fff;
-  z-index: 1;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  position: relative;
+}
+.tab :checked + .tab-title::after {
+  content: "−";
+}
+.tab :checked ~ .tab-content {
+  display: block;
+}
+
+.question-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+.question-info h2 {
+  color: #fff;
+}
+.question-info p {
+  font-size: 2rem;
+  color: #fff;
+}
+.question-info a {
+  text-decoration: none;
+  font-size: 2rem;
+  margin-top: 10px;
+  color: #ffffff;
+  background-color: #183243;
+  border-radius: 25px;
+  padding: 10px 25px;
+  margin-bottom: 40px;
 }
 
 .why-we h2 {
@@ -944,9 +1019,27 @@ header .header-wrap .menu-list li a {
 }
 
 .gallary {
-  background: #236591;
-  background: -webkit-gradient(linear, left top, left bottom, from(#236591), to(#183243));
-  background: linear-gradient(180deg, #236591 0%, #183243 100%);
+  background: #4a5f6c;
+  background: -webkit-gradient(linear, left top, left bottom, from(#4a5f6c), to(#183243));
+  background: linear-gradient(180deg, #4a5f6c 0%, #183243 100%);
+  position: relative;
+}
+.gallary-shape {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-clip-path: polygon(300px 0, 100% 0%, calc( 100% - 300px ) 100%, 0 100%);
+          clip-path: polygon(300px 0, 100% 0%, calc( 100% - 300px ) 100%, 0 100%);
+  background: url("../img/gallary-bg1.png") left 75% no-repeat;
+  background-size: 100%;
+}
+@media (max-width: 964px) {
+  .gallary-shape {
+    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+  }
 }
 .gallary h2 {
   color: #fff;

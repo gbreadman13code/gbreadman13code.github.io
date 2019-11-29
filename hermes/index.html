@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="./css/slick.css">
     <link rel="stylesheet" href="./css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Rubik:400,700&display=swap" rel="stylesheet">
     <title>Гермес-авто | Автоперевозки по России</title>
     <script src="https://kit.fontawesome.com/778e9c724b.js" crossorigin="anonymous"></script>
 </head>
@@ -181,6 +180,7 @@
         </section>
     </section>
     <section class="our-geo d-none d-xl-block">
+        <div class="shapes-geo"></div>
         <h2 class="d-none">География</h2>
         <span class="our-geo-decor">В каждом городе есть наш&nbsp;терминал</span>
         <div class="our-geo-wrap">
@@ -252,7 +252,7 @@
                 <p>Москва</p>
                 <img src="./img/map-icon1.png" alt="" class="map-icon">
             </div>
-            <img src="./img/map1.png" alt="map" class="map">
+            <img src="./img/map4.png" alt="map" class="map">
         </div>
     </section>
     <section class="contact-us">
@@ -342,45 +342,79 @@
             </div>
         </div>
     </section>
-    <section class="faq">
+    <section class="question">
+        <div class="shapes-center"></div>
         <div class="container">
-            <div class="faq-wrap">
-                <div class="faq-item">
-                    <p class="question question1">Какие документы необходимы для договора?</p>
-                    <div class="answer-wrap1 answer-wrap answer-wrap-empty"><p class="answer answer1 slide-up">Для заключения договора Вам необходимо скинуть фото или копию паспорта (1 стр. и прописка), СТС или ПТС Вашего автомобиля, и его примерную рыночную стоимость.</p></div>
-                </div>
-                <div class="faq-item">
-                    <p class="question question2">Если я нахожусь в другом городе, как будем заключать договор?</p>
-                    <div class="answer-wrap2 answer-wrap answer-wrap-empty"><p class="answer answer2 slide-up">Большинство договоров мы заключаем по электронной почте: составляем договор, подписываем, ставим печать, и отправляем на подпись Вам.</p></div>
-                </div>
-                <div class="faq-item">
-                    <p class="question question3">Возможно ли мне отдать вам автомобиль заранее?</p>
-                    <div class="answer-wrap3 answer-wrap answer-wrap-empty"><p class="answer answer3 question3 slide-up">Конечно возможно, в большинстве городов у нас есть терминал, куда вы можете пригнать автомобиль. Это бесплатно. Забрать его также можно в удобное Вам время, автомобиль дождётся Вас на бесплатном охраняемом терминале.</p></div>
-                </div>
-                <div class="faq-item">
-                    <p class="question question4">Можете ли вы сказать точную дату доставки моего автомобиля?</p>
-                    <div class="answer-wrap4 answer-wrap answer-wrap-empty"><p class="answer answer4 slide-up">Обычно мы называем примерные сроки доставки с погрешностью в 2-3 дня, но примерно за 2 дня до прибытия мы извещаем Вас о точной дате прибытия. Назвать точную дату прибытия не позволяют реалии дорог. </p></div>
-                </div>
-                <div class="faq-item">
-                    <p class="question question5">Как вы фиксируете состояние автомобиля до отправки?</p>
-                    <div class="answer-wrap5 answer-wrap answer-wrap-empty"><p class="answer answer5 slide-up">Когда Вы пригоняете к нам автомобиль, мы подписываем акт приема-передачи, где указываются документы и вещи, которые Вы передаёте, а также составляется фотоопись автомобиля, которая свидетельствует его внешнее состояние до отправки.</p></div>
-                </div>
-                <div class="faq-item">
-                    <p class="question question6">Кто принимает автомобиль на погрузку?</p>
-                    <div class="answer-wrap6 answer-wrap answer-wrap-empty"><p class="answer answer6 slide-up">Если Вы передаёте автомобиль заранее, то его принимает наш представитель, а если на погрузку, то Вы передаете автомобиль нашему водителю.</p></div>
-                </div>
-                <div class="faq-item">
-                    <p class="question question7">Как происходит оплата?</p>
-                    <div class="answer-wrap7 answer-wrap answer-wrap-empty"><p class="answer answer7 slide-up">Вы можете оплатить перевозку любым удобным вам способом:
-                            1. Оплатить всю сумму при погрузке.
-                            2. 50% на погрузке и 50% на выгрузке.
-                            3. Оплатить всю сумму непосредственно на выгрузке.</p>
+            <div class="row">
+                    <div class="col-xl-6">
+                        <div class="question-info">
+                            <h2>Еще остались вопросы?</h2>
+                            <p>Ищите ответы на них здесь <br> или позвоните специалисту</p>
+                            <a href="tel:+7(908) 026-68-79">8 (908) 026-68-79</a>
+                        </div>
+                    </div>
+                <div class="col-xl-6">
+                    <div class="accordeon"> 
+                    <div class="tab">
+                        <input type="checkbox" id="tab1" name="tab-group">
+                        <label for="tab1" class="tab-title">Какие документы необходимы для договора?</label> 
+                        <div class="tab-content"> 
+                            <p>Для заключения договора Вам необходимо скинуть фото или копию паспорта (1 стр. и прописка), СТС или ПТС Вашего автомобиля, и его примерную рыночную стоимость.</p>
+                        </div> 
+                    </div> 
+                    <div class="tab">
+                        <input type="checkbox" id="tab2" name="tab-group">
+                        <label for="tab2" class="tab-title">Если я нахожусь в другом городе, как будем заключать договор?</label> 
+                        <div class="tab-content"><p>Большинство договоров мы заключаем по электронной почте: составляем договор, подписываем, ставим печать, и отправляем на подпись Вам.</p></div> 
+                    </div> 
+                    <div class="tab">
+                        <input type="checkbox" id="tab3" name="tab-group">
+                        <label for="tab3" class="tab-title">Возможно ли мне отдать вам автомобиль заранее?</label>
+                        <div class="tab-content">
+                            <p>Конечно возможно, в большинстве городов у нас есть терминал, куда вы можете пригнать автомобиль. Это бесплатно. Забрать его также можно в удобное Вам время, автомобиль дождётся Вас на бесплатном охраняемом терминале.</p>
+                        </div>
+                    </div>
+                    <div class="tab">
+                        <input type="checkbox" id="tab4" name="tab-group">
+                        <label for="tab4" class="tab-title">Можете ли вы сказать точную дату доставки моего автомобиля?</label>
+                        <div class="tab-content">
+                            <p>Обычно мы называем примерные сроки доставки с погрешностью в 2-3 дня, но примерно за 2 дня до прибытия мы извещаем Вас о точной дате прибытия. Назвать точную дату прибытия не позволяют реалии дорог.</p>
+                        </div>
+                    </div>
+                    <div class="tab">
+                        <input type="checkbox" id="tab5" name="tab-group">
+                        <label for="tab5" class="tab-title">Как вы фиксируете состояние автомобиля до отправки?</label>
+                        <div class="tab-content">
+                            <p>Когда Вы пригоняете к нам автомобиль, мы подписываем акт приема-передачи, где указываются документы и вещи, которые Вы передаёте, а также составляется фотоопись автомобиля, которая свидетельствует его внешнее состояние до отправки.</p>
+                        </div>
+                    </div>
+                    <div class="tab">
+                        <input type="checkbox" id="tab6" name="tab-group">
+                        <label for="tab6" class="tab-title">Кто принимает автомобиль на погрузку?</label>
+                        <div class="tab-content">
+                            <p>Если Вы передаёте автомобиль заранее, то его принимает наш представитель, а если на погрузку, то Вы передаете автомобиль нашему водителю.</p>
+                        </div>
+                    </div>
+                    <div class="tab">
+                        <input type="checkbox" id="tab7" name="tab-group">
+                        <label for="tab7" class="tab-title">Как происходит оплата?</label>
+                        <div class="tab-content">
+                            <p>Вы можете оплатить перевозку любым удобным вам способом:
+                                <ul>
+                                    <li>1. Оплатить всю сумму при погрузке.</li>
+                                    <li>2. 50% на погрузке и 50% на выгрузке.</li>
+                                    <li>3. Оплатить всю сумму непосредственно на выгрузке.</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
                     </div>
                 </div>
-            </div>
-        </div>
+            </div>  
+        </div>  
     </section>
     <section class="gallary">
+        <div class="gallary-shape"></div>
         <h2>Галерея</h2>
         <div class="container">
             <div class="gallary-block">
@@ -435,7 +469,7 @@
         </div>
         </div>
     </footer>
-</div>
+</s>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="crossorigin="anonymous"></script>
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
