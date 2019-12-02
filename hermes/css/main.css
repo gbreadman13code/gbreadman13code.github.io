@@ -74,6 +74,12 @@ header .header-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 @media (max-width: 767px) {
   header .header-wrap {
@@ -143,6 +149,8 @@ header .header-wrap .mobile-menu {
           transform: translateX(300px);
 }
 header .header-wrap .mobile-menu ul {
+  position: fixed;
+  left: calc( 50% - 104px );
   height: 70%;
   padding: 100px 50px;
   list-style: none;
@@ -227,7 +235,7 @@ header .header-wrap .menu-list li a {
 }
 @media (max-width: 1199px) {
   header .header-wrap .menu-list li a {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -844,7 +852,7 @@ header .header-wrap .menu-list li a {
 }
 @media (max-width: 991px) {
   .contact-us {
-    background: url("../img/volvo.png") -60% center no-repeat;
+    background: url("../img/volvo.png") -1478% center no-repeat;
   }
 }
 @media (max-width: 767px) {
@@ -898,6 +906,11 @@ header .header-wrap .menu-list li a {
 .contact-us-header-wrap h2:last-child {
   color: #ffffff;
 }
+@media (max-width: 991px) {
+  .contact-us-header-wrap h2:last-child {
+    display: none;
+  }
+}
 .contact-us .contact-us-wrap .contact-list {
   list-style: none;
   display: -webkit-box;
@@ -922,6 +935,11 @@ header .header-wrap .menu-list li a {
 @media (max-width: 1199px) {
   .contact-us .contact-us-wrap .contact-list li {
     margin: 5px 0;
+  }
+}
+@media (max-width: 500px) {
+  .contact-us .contact-us-wrap .contact-list li {
+    width: 68%;
   }
 }
 .contact-us .contact-us-wrap .contact-list li .contact-icon {
@@ -978,8 +996,20 @@ header .header-wrap .menu-list li a {
   color: #fff;
   font-size: 1rem;
 }
+@media (max-width: 991px) {
+  .contact-us form + p {
+    width: 60%;
+    color: #111;
+    font-size: 1.4rem;
+  }
+}
 .contact-us form + p .agree {
   color: #fff;
+}
+@media (max-width: 991px) {
+  .contact-us form + p .agree {
+    color: #111;
+  }
 }
 
 .docs {
