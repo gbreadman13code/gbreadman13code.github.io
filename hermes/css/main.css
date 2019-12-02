@@ -49,12 +49,6 @@ section h2 {
           transform: translateY(-100%);
 }
 
-.answer-wrap-empty {
-  height: 0;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
 input {
   outline: none;
   border: none;
@@ -69,7 +63,7 @@ input {
 }
 
 header {
-  padding: 15px 0;
+  z-index: 1000;
   width: 100%;
   background-color: #183243;
   position: absolute;
@@ -166,13 +160,14 @@ header .header-wrap .mobile-menu ul {
           align-items: center;
 }
 header .header-wrap .mobile-menu ul li a {
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-decoration: none;
   text-transform: uppercase;
   color: #111111;
 }
 header .header-wrap .logo img {
   width: 300px;
+  padding: 15px 0;
 }
 @media (max-width: 767px) {
   header .header-wrap .logo img {
@@ -191,11 +186,44 @@ header .header-wrap .menu-list {
       -ms-flex-align: center;
           align-items: center;
 }
+header .header-wrap .menu-list li {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+header .header-wrap .menu-list li::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  -webkit-transform: translateY(4px);
+          transform: translateY(4px);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+header .header-wrap .menu-list li:hover::after {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
 header .header-wrap .menu-list li a {
   text-decoration: none;
   color: #fff;
   text-transform: uppercase;
-  font-size: 2.2rem;
+  font-size: 1.5rem;
+  cursor: pointer;
 }
 @media (max-width: 1199px) {
   header .header-wrap .menu-list li a {
@@ -435,6 +463,37 @@ header .header-wrap .menu-list li a {
   -webkit-clip-path: polygon(0 0, 78% 0, 100% 100%, 0% 100%);
           clip-path: polygon(0 0, 78% 0, 100% 100%, 0% 100%);
   background-color: #183243;
+  padding: 300px 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.our-geo .shapes-geo p {
+  color: #ffffff;
+  font-size: 2.8rem;
+  margin-bottom: 5px;
+}
+.our-geo .shapes-geo p a {
+  color: #fff;
+}
+.our-geo .shapes-geo .agree {
+  text-decoration: none;
+  font-size: 2rem;
+  margin-top: 10px;
+  color: #183243;
+  background-color: #fff;
+  border-radius: 25px;
+  padding: 10px 25px;
+  width: 224px;
+}
+@media (min-width: 2000px) {
+  .our-geo .shapes-geo {
+    width: 800px;
+  }
 }
 .our-geo-decor {
   position: absolute;
@@ -682,6 +741,56 @@ header .header-wrap .menu-list li a {
     right: 1477px;
   }
 }
+.our-geo .our-geo-wrap .city18 {
+  top: 381px;
+  right: 706px;
+}
+@media (min-width: 2027px) {
+  .our-geo .our-geo-wrap .city18 {
+    top: 590px;
+    right: 1057px;
+  }
+}
+.our-geo .our-geo-wrap .city19 {
+  top: 257px;
+  right: 145px;
+}
+@media (min-width: 2027px) {
+  .our-geo .our-geo-wrap .city19 {
+    top: 400px;
+    right: 231px;
+  }
+}
+.our-geo .our-geo-wrap .city20 {
+  top: 317px;
+  right: 257px;
+}
+@media (min-width: 2027px) {
+  .our-geo .our-geo-wrap .city20 {
+    top: 484px;
+    right: 394px;
+  }
+}
+.our-geo .our-geo-wrap .city21 {
+  top: 450px;
+  right: 1004px;
+}
+@media (min-width: 2027px) {
+  .our-geo .our-geo-wrap .city21 {
+    top: 685px;
+    right: 1516px;
+  }
+}
+.our-geo .our-geo-wrap .city22 {
+  top: 465px;
+  right: 1110px;
+}
+@media (min-width: 2027px) {
+  .our-geo .our-geo-wrap .city22 {
+    top: 696px;
+    right: 1677px;
+  }
+}
 .our-geo .our-geo-wrap .city:hover .map-icon {
   -webkit-transform: scale(1);
           transform: scale(1);
@@ -696,6 +805,7 @@ header .header-wrap .menu-list li a {
 
 .contact-us {
   background: url("../img/volvo.png") center no-repeat;
+  position: relative;
 }
 @media (max-width: 991px) {
   .contact-us {
@@ -712,8 +822,41 @@ header .header-wrap .menu-list li a {
     background: none;
   }
 }
-.contact-us h2 {
-  text-align: left;
+.contact-us .shapes-contact {
+  position: absolute;
+  top: -40px;
+  right: 0;
+  bottom: -40px;
+  width: 500px;
+  -webkit-clip-path: polygon(22% 0, 100% 0, 100% 100%, 0% 100%);
+          clip-path: polygon(22% 0, 100% 0, 100% 100%, 0% 100%);
+  background-color: #183243;
+}
+@media (min-width: 2000px) {
+  .contact-us .shapes-contact {
+    width: 1200px;
+  }
+}
+.contact-us-header-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.contact-us-header-wrap h2 {
+  z-index: 5;
+  font-size: 2.2rem;
+}
+.contact-us-header-wrap h2:first-child {
+  color: #183243;
+}
+.contact-us-header-wrap h2:last-child {
+  color: #ffffff;
 }
 .contact-us .contact-us-wrap .contact-list {
   list-style: none;
@@ -755,8 +898,7 @@ header .header-wrap .menu-list li a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border: 1px solid blue;
-  background-color: blue;
+  background-color: #183243;
   border-radius: 50%;
   font-size: 4rem;
   color: #ffffff;
@@ -791,6 +933,13 @@ header .header-wrap .menu-list li a {
 }
 .contact-us form input:last-child {
   border-bottom-right-radius: 15px;
+}
+.contact-us form + p {
+  color: #fff;
+  font-size: 1rem;
+}
+.contact-us form + p .agree {
+  color: #fff;
 }
 
 .docs {
@@ -1027,13 +1176,14 @@ header .header-wrap .menu-list li a {
 .gallary-shape {
   height: 100%;
   width: 100%;
+  z-index: 0;
   position: absolute;
   top: 0;
   left: 0;
   -webkit-clip-path: polygon(300px 0, 100% 0%, calc( 100% - 300px ) 100%, 0 100%);
           clip-path: polygon(300px 0, 100% 0%, calc( 100% - 300px ) 100%, 0 100%);
   background: url("../img/gallary-bg1.png") left 75% no-repeat;
-  background-size: 100%;
+  background-size: cover;
 }
 @media (max-width: 964px) {
   .gallary-shape {
