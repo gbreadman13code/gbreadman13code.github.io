@@ -42,4 +42,8 @@ $(document).ready(function () {
     });
     return false;
     });
+    $('.mobile-menu-link').click(function (e) { 
+        e.preventDefault();
+        $('.all-wrap').toggleClass('slide');
+    });
 });
