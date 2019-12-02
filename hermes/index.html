@@ -12,9 +12,11 @@
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
     <title>Гермес-авто | Автоперевозки по России</title>
     <script src="https://kit.fontawesome.com/778e9c724b.js" crossorigin="anonymous"></script>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="./js/slick.min.js"></script>
 </head>
 <body>
-    <div class="all-wrap">
+    <div id="up" class="all-wrap">
     <header>
         <div class="container">
             <div class="header-wrap">
@@ -22,13 +24,13 @@
                     <img src="./img/main-logo.png" alt="">
                 </a>
                 <ul class="menu-list d-none d-lg-flex">
-                    <li><a href="#" class="menu-link">О компании</a></li>
-                    <li><a href="#" class="menu-link">Партнеры</a></li>
-                    <li><a href="#" class="menu-link">Наша география</a></li>
-                    <li><a href="#" class="menu-link">Контакты</a></li>
-                    <li><a href="#" class="menu-link">Документы</a></li>
-                    <li><a href="#" class="menu-link">Вопросы</a></li>
-                    <li><a href="#" class="menu-link">Галерея</a></li>
+                    <li><a href="#about" class="menu-link">О компании</a></li>
+                    <li><a href="#partners" class="menu-link">Партнеры</a></li>
+                    <li><a href="#geo" class="menu-link">Наша география</a></li>
+                    <li><a href="#contacts" class="menu-link">Контакты</a></li>
+                    <li><a href="#docs" class="menu-link">Документы</a></li>
+                    <li><a href="#questions" class="menu-link">Вопросы</a></li>
+                    <li><a href="#gallary" class="menu-link">Галерея</a></li>
                 </ul>
                 <div class="mobile-menu-button d-lg-none">
                     <div class="burger-menu-line1 burger-menu-line"></div>
@@ -37,13 +39,13 @@
                 </div>
                 <div class="mobile-menu">
                     <ul>
-                        <li><a href="#" class="mobile-menu-link">О компании</a></li>
-                        <li><a href="#" class="mobile-menu-link">Партнеры</a></li>
-                        <li><a href="#" class="mobile-menu-link">Наша география</a></li>
-                        <li><a href="#" class="mobile-menu-link">Контакты</a></li>
-                        <li><a href="#" class="mobile-menu-link">Документы</a></li>
-                        <li><a href="#" class="mobile-menu-link">Вопросы</a></li>
-                        <li><a href="#" class="mobile-menu-link">Галерея</a></li>
+                        <li><a href="#about" class="mobile-menu-link">О компании</a></li>
+                        <li><a href="#partners" class="mobile-menu-link">Партнеры</a></li>
+                        <li><a href="#geo" class="mobile-menu-link">Наша география</a></li>
+                        <li><a href="#contacts" class="mobile-menu-link">Контакты</a></li>
+                        <li><a href="#docs" class="mobile-menu-link">Документы</a></li>
+                        <li><a href="#questions" class="mobile-menu-link">Вопросы</a></li>
+                        <li><a href="#gallary" class="mobile-menu-link">Галерея</a></li>
                     </ul>
                 </div>
             </div>
@@ -67,7 +69,7 @@
            </div>
         </div>
     </section>
-    <section class="about white">
+    <section class="about white" id="about">
         <div class="container">
             <div class="about-wrap">
                 <span class="about-wrap-decor">15 <br> лет</span>
@@ -116,7 +118,7 @@
             </div>
         </div>
     </section>
-    <section class="why-we_partners parallax-window" data-parallax="scroll" data-image-src="./img/natural-bg.jpg">
+    <section id="partners" class="why-we_partners parallax-window" data-parallax="scroll" data-image-src="./img/natural-bg.jpg">
         <section class="why-we">   
                 <div class="container">
                     <h2>Почему клиенты <br> выбирают нас</h2>
@@ -167,7 +169,7 @@
                     </div>
                     <div class="partners-item">
                         <img src="./img/partners/balt.png" alt="">
-                        <p class="partners-descr">«БалтАвтоТрейд-М»</p>
+                        <p class="partners-descr">ООО «ЭлитАвто»</p>
                     </div>
                     <div class="partners-item">
                         <img src="./img/partners/chery.png" alt="">
@@ -185,16 +187,16 @@
             </div>
         </section>
     </section>
-    <section class="our-geo d-none d-xl-block">
+    <section id="geo" class="our-geo d-none d-xl-block">
         <div class="shapes-geo">
             <p>На карте отмечена лишь част городов, через которые едут наши автовозы. Везде есть наши терминалы - 
             охраняемые площадки, куда можно пригнать автомобиль за несколько дней до отправки и забрать через несколько - после доставки.
-            Это бесплатно. Это удобно. Это безопасно</p>
+            Это бесплатно. Это удобно. Это безопасно.</p>
             <p>Но и это не все наши возможности. По желанию клиента водитель может остановиться и загрузить или отдать автомобиль 
                 в любом населенном пункте по пути следования. Отдельно можно договориться и встретиться даже на трассе.
             </p>
             <p>
-                Подробнее можно узнать у нашего менеджера. Заполните <a href="#">заявку</a>, чтобы вам перезвонили или позвоните сами
+                Подробнее можно узнать у нашего менеджера. Заполните <a href="#contacts">заявку</a>, чтобы вам перезвонили или позвоните сами
             </p>
             <a href="tel:+7(908) 026-68-79" class="call-us">8 (908) 026-68-79</a>
         </div>
@@ -292,7 +294,7 @@
             <img src="./img/map4.png" alt="map" class="map">
         </div>
     </section>
-    <section class="contact-us">
+    <section id="contacts" class="contact-us">
         <div class="shapes-contact"></div>
         <div class="container">
             <div class="contact-us-header-wrap">
@@ -357,7 +359,7 @@
         </div>
     </section>
     <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A360fcb2f636c91272395ffcf98edaafb45a4805f960101fd53f6e043b51eae11&amp;source=constructor" width="100%" height="300" frameborder="0"></iframe>        
-    <section class="docs">
+    <section id="docs" class="docs">
         <div class="shapes-right"></div>
         <div class="shapes-left"></div>
         <div class="container">
@@ -385,7 +387,7 @@
             </div>
         </div>
     </section>
-    <section class="question">
+    <section id="questions" class="question">
         <div class="shapes-center"></div>
         <div class="container">
             <div class="row">
@@ -399,47 +401,47 @@
                 <div class="col-xl-6">
                     <div class="accordeon"> 
                     <div class="tab">
-                        <input type="checkbox" id="tab1" name="tab-group">
+                        <input type="radio" id="tab1" name="tab-group">
                         <label for="tab1" class="tab-title">Какие документы необходимы для договора?</label> 
                         <div class="tab-content"> 
-                            <p>Для заключения договора Вам необходимо скинуть фото или копию паспорта (1 стр. и прописка), СТС или ПТС Вашего автомобиля, и его примерную рыночную стоимость.</p>
+                            <p>Для заключения договора Вам необходимо отправить фото или копию паспорта (1 стр. и прописка), СТС или ПТС Вашего автомобиля, и его примерную рыночную стоимость. Отправить можно любым удобным способом: по электронной почте или SMS, через Viber, WhatsApp, Telegram.</p>
                         </div> 
                     </div> 
                     <div class="tab">
-                        <input type="checkbox" id="tab2" name="tab-group">
+                        <input type="radio" id="tab2" name="tab-group">
                         <label for="tab2" class="tab-title">Если я нахожусь в другом городе, как будем заключать договор?</label> 
                         <div class="tab-content"><p>Большинство договоров мы заключаем по электронной почте: составляем договор, подписываем, ставим печать, и отправляем на подпись Вам.</p></div> 
                     </div> 
                     <div class="tab">
-                        <input type="checkbox" id="tab3" name="tab-group">
+                        <input type="radio" id="tab3" name="tab-group">
                         <label for="tab3" class="tab-title">Возможно ли мне отдать вам автомобиль заранее?</label>
                         <div class="tab-content">
                             <p>Конечно возможно, в большинстве городов у нас есть терминал, куда вы можете пригнать автомобиль. Это бесплатно. Забрать его также можно в удобное Вам время, автомобиль дождётся Вас на бесплатном охраняемом терминале.</p>
                         </div>
                     </div>
                     <div class="tab">
-                        <input type="checkbox" id="tab4" name="tab-group">
+                        <input type="radio" id="tab4" name="tab-group">
                         <label for="tab4" class="tab-title">Можете ли вы сказать точную дату доставки моего автомобиля?</label>
                         <div class="tab-content">
                             <p>Обычно мы называем примерные сроки доставки с погрешностью в 2-3 дня, но примерно за 2 дня до прибытия мы извещаем Вас о точной дате прибытия. Назвать точную дату прибытия не позволяют реалии дорог.</p>
                         </div>
                     </div>
                     <div class="tab">
-                        <input type="checkbox" id="tab5" name="tab-group">
+                        <input type="radio" id="tab5" name="tab-group">
                         <label for="tab5" class="tab-title">Как вы фиксируете состояние автомобиля до отправки?</label>
                         <div class="tab-content">
                             <p>Когда Вы пригоняете к нам автомобиль, мы подписываем акт приема-передачи, где указываются документы и вещи, которые Вы передаёте, а также составляется фотоопись автомобиля, которая свидетельствует его внешнее состояние до отправки.</p>
                         </div>
                     </div>
                     <div class="tab">
-                        <input type="checkbox" id="tab6" name="tab-group">
+                        <input type="radio" id="tab6" name="tab-group">
                         <label for="tab6" class="tab-title">Кто принимает автомобиль на погрузку?</label>
                         <div class="tab-content">
-                            <p>Если Вы передаёте автомобиль заранее, то его принимает наш представитель, а если на погрузку, то Вы передаете автомобиль нашему водителю.</p>
+                            <p>Если Вы передаёте автомобиль заранее, то его принимает наш представитель, а если на погрузку, то Вы передаете автомобиль нашему водителю. ОБЯЗАТЕЛЬНО с машиной нужно отправить оригинал одного из документов: ПТС, СТС, договор купли-продажи.</p>
                         </div>
                     </div>
                     <div class="tab">
-                        <input type="checkbox" id="tab7" name="tab-group">
+                        <input type="radio" id="tab7" name="tab-group">
                         <label for="tab7" class="tab-title">Как происходит оплата?</label>
                         <div class="tab-content">
                             <p>Вы можете оплатить перевозку любым удобным вам способом:
@@ -456,7 +458,7 @@
             </div>  
         </div>  
     </section>
-    <section class="gallary">
+    <section id="gallary" class="gallary">
         <div class="gallary-shape"></div>
         <h2>Галерея</h2>
         <div class="container">
@@ -507,7 +509,7 @@
                 <li><a href="">Документы</a></li>
                 <li><a href="">Галерея</a></li>
             </ul>
-            <a href="#" class="to-main">Наверх</a>
+            <a href="#up" class="to-main">Наверх</a>
             <p class="made">Сделано в <a href="https://gbreadman13code.gitgub.io">Красноярске. <br> Кодинг по-сибирски</a></p>        
         </div>
         </div>
@@ -515,7 +517,6 @@
 </s>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="crossorigin="anonymous"></script>
-    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="./js/parallax.min.js"></script>
     <script src="./js/main.js"></script>
     <script src="./js/slick.min.js"></script>

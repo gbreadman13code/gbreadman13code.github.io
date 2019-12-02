@@ -33,14 +33,13 @@ $(document).ready(function () {
         $('.answer7').toggleClass('slide-up');
         $('.answer-wrap7').toggleClass('answer-wrap-empty')
     });
-    function clickRadio(el) {
-        var siblings = document.querySelectorAll("input[type='radio'][name='" + el.name + "']");
-        for (var i = 0; i < siblings.length; i++) {
-          if (siblings[i] != el)
-            siblings[i].oldChecked = false;
-        }
-        if (el.oldChecked)
-          el.checked = false;
-        el.oldChecked = el.checked;
-      }
+    $("a").click(function() {
+    $("html, body").animate({
+        scrollTop: $($(this).attr("href")).offset().top + "px"
+    }, {
+        duration: 500,
+        easing: "swing"
+    });
+    return false;
+    });
 });

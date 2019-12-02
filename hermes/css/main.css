@@ -2,6 +2,7 @@
 html {
   font-family: "Rubik", sans-serif;
   font-size: 10px;
+  overflow-x: hidden;
 }
 @media (max-width: 1199px) {
   html {
@@ -502,6 +503,7 @@ header .header-wrap .menu-list li a {
   color: #ffffff;
   font-size: 2.8rem;
   margin-bottom: 5px;
+  z-index: 1000;
 }
 @media (max-width: 2269px) {
   .our-geo .shapes-geo p {
@@ -522,6 +524,8 @@ header .header-wrap .menu-list li a {
 }
 .our-geo .shapes-geo p a {
   color: #fff;
+  z-index: 1000;
+  position: relative;
 }
 .our-geo .shapes-geo .agree {
   text-decoration: none;
