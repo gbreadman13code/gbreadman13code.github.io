@@ -260,13 +260,13 @@ header .header-wrap .menu-list li a {
   }
 }
 .main-page .main-page-wrap form {
-  padding: 70px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 65px;
 }
 @media (max-width: 767px) {
   .main-page .main-page-wrap form {
