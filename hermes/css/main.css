@@ -465,6 +465,12 @@ header .header-wrap .menu-list li a {
   padding-top: 0;
   position: relative;
   min-height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   background: url("../img/geo-bg.jpg") center no-repeat;
   background-size: cover;
 }
@@ -491,7 +497,7 @@ header .header-wrap .menu-list li a {
 }
 @media (max-width: 1500px) {
   .our-geo .shapes-geo {
-    width: 340px;
+    width: 300px;
     padding: 300px 50px;
   }
 }
@@ -571,7 +577,7 @@ header .header-wrap .menu-list li a {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  width: 100%;
+  width: 80%;
 }
 .our-geo .our-geo-wrap .map {
   width: 1212px;
@@ -1248,24 +1254,6 @@ header .header-wrap .menu-list li a {
   background: -webkit-gradient(linear, left top, left bottom, from(#4a5f6c), to(#183243));
   background: linear-gradient(180deg, #4a5f6c 0%, #183243 100%);
   position: relative;
-}
-.gallary-shape {
-  height: 100%;
-  width: 100%;
-  z-index: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  -webkit-clip-path: polygon(300px 0, 100% 0%, calc( 100% - 300px ) 100%, 0 100%);
-          clip-path: polygon(300px 0, 100% 0%, calc( 100% - 300px ) 100%, 0 100%);
-  background: url("../img/gallary-bg1.png") left 75% no-repeat;
-  background-size: cover;
-}
-@media (max-width: 964px) {
-  .gallary-shape {
-    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
-            clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
-  }
 }
 .gallary h2 {
   color: #fff;
