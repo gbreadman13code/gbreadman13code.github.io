@@ -129,7 +129,7 @@ header .logo img {
 
 .main-screen {
   height: 100vh;
-  background: black url("../img/main-bg.png") right -18% no-repeat;
+  background: black url("./img/main-bg.png") right -18% no-repeat;
   background-size: cover;
 }
 .main-screen .sale-wrap {
@@ -395,7 +395,7 @@ header .logo img {
   width: 100%;
   height: 200px;
   margin-bottom: 30px;
-  background: url("../img/contact-bg1.png") center no-repeat;
+  background: url("./img/contact-bg1.png") center no-repeat;
   background-size: contain;
 }
 .contacts .contact-item p {
