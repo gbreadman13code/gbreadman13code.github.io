@@ -88,4 +88,18 @@ $(document).ready(function () {
         $('.mobile-menu-list').slideToggle(400)
     });
 
+    
+
+
 });
+
+var prices = $('.prices');
+var pricesTop = prices.offset().top;
+
+$(window).bind('scroll', (function(){
+    var windowTop = $(this).scrollTop();
+    if (windowTop > pricesTop) {
+        $('.map').html('<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A6f395da07b4cc10029b3d2589ad9899f17ad6d15aed62d554f3955a7e1fe09f9&amp;width=100%25&amp;height=373&amp;lang=ru_RU&amp;scroll=true"></script>');
+        $(window).unbind('scroll');
+    }
+}));
