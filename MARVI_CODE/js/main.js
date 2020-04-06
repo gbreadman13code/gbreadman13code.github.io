@@ -19,18 +19,22 @@ $(document).ready(function () {
     $('.nail').click(function (e) { 
         e.preventDefault();
         $('.slideNail').slideToggle(400)
+        $('.nail-img').html('<div class="row"><div class="col-6 col-md-4"><img src="./img/manicure/man1.jpg" alt=""></div><div class="col-6 col-md-4"><img src="./img/manicure/man2.jpg" alt=""></div><div class="col-6 col-md-4"><img src="./img/manicure/man3.jpg" alt=""></div><div class="col-6 col-md-4"><img src="./img/manicure/man4.jpg" alt=""></div><div class="col-6 col-md-4"><img src="./img/manicure/man5.jpg" alt=""></div><div class="col-6 col-md-4"><img src="./img/manicure/man6.jpg" alt=""></div></div>');
     });
     $('.express').click(function (e) { 
         e.preventDefault();
         $('.slideExpress').slideToggle(400)
+        $('.express-img').html('<div class="row"><div class="col-6 col-md-4"><img src="./img/4hands/4hands1.jpg" alt=""></div><div class="col-6 col-md-4"><img src="./img/4hands/4hands2.jpg" alt=""></div><div class="col-6 col-md-4"><img src="./img/4hands/4hands3.jpg" alt=""></div><div class="col-6 col-md-4"><img src="./img/4hands/4hands4.jpg" alt=""></div></div>')
     });
     $('.brows').click(function (e) { 
         e.preventDefault();
         $('.slideBrows').slideToggle(400)
+        $('.brows-img').html('<div class="row"><div class="col-6 col-md-4"><img src="./img/brows/brows1.jpg" alt=""></div><div class="col-6 col-md-4"><img src="./img/brows/brows2.jpg" alt=""></div><div class="col-6 col-md-4"><img src="./img/brows/brows3.jpg" alt=""></div><div class="col-6 col-md-4"><img src="./img/brows/brows4.jpg" alt=""></div><div class="col-6 col-md-4"><img src="./img/brows/brows5.jpg" alt=""></div><div class="col-6 col-md-4"><img src="./img/brows/brows6.jpg" alt=""></div></div>')
     });
     $('.makeup').click(function (e) { 
         e.preventDefault();
         $('.slideMakeUp').slideToggle(400)
+        $('.makeup-img').html('<div class="row"><div class="col-6 col-md-4"><img src="./img/make/make1.jpg" alt=""></div><div class="col-6 col-md-4"><img src="./img/make/make2.jpg" alt=""></div><div class="col-6 col-md-4"><img src="./img/make/make3.jpg" alt=""></div><div class="col-6 col-md-4"><img src="./img/make/make4.jpg" alt=""></div><div class="col-6 col-md-4"><img src="./img/make/make5.jpg" alt=""></div><div class="col-6 col-md-4"><img src="./img/make/make6.jpg" alt=""></div></div>')
     });
 
 // слайдер цен
