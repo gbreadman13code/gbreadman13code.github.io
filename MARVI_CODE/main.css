@@ -1,6 +1,7 @@
 @font-face {
   font-family: "Century Gothic";
   src: url("../fonts/11528.ttf");
+  font-display: swap;
 }
 html {
   font-size: 10px !important;
