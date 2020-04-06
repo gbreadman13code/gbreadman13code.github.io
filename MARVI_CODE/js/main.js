@@ -14,6 +14,7 @@ $(document).ready(function () {
     $('.cuts').click(function (e) { 
         e.preventDefault();
         $('.slideCuts').slideToggle(400)
+        $('.cuts-img').html('<div class="row"><div class="col-6 col-md-4"><img src="./img/cuts/cuts1.jpg" alt=""></div><div class="col-6 col-md-4"><img src="./img/cuts/cuts2.jpg" alt=""></div><div class="col-6 col-md-4"><img src="./img/cuts/cuts3.jpg" alt=""></div><div class="col-6 col-md-4"><img src="./img/cuts/cuts4.jpg" alt=""></div><div class="col-6 col-md-4"><img src="./img/cuts/cuts5.jpg" alt=""></div><div class="col-6 col-md-4"><img src="./img/cuts/cuts6.jpg" alt=""></div></div>');
     });
     $('.nail').click(function (e) { 
         e.preventDefault();
@@ -92,6 +93,8 @@ $(document).ready(function () {
 
 
 });
+
+
 
 var prices = $('.prices');
 var pricesTop = prices.offset().top;
