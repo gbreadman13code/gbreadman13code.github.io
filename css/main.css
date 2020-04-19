@@ -373,6 +373,13 @@ svg {
 .portfolio-block .portfolio-item_2 {
   background-image: url(../img/wheelz.png) !important;
 }
+.portfolio-block .portfolio-item_3 {
+  background-image: url(../img/germess.png) !important;
+}
+.portfolio-block .portfolio-item_4 {
+  background-image: url(../img/marvi.png) !important;
+}
+
 .portfolio-block .portfolio-item {
   width: 250px;
   height: 250px;
