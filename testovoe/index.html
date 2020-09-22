@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Harness</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="adaptive.css">
+</head>
+
+<body>
+    <div class="main-wrap">
+        <header>
+            <a href="#" class="logo"><img src="/img/logo.png" alt="Dr. Harness"></a>
+            <ul class="nav">
+                <li><a href="#catalog">КАТАЛОГ</a></li>
+                <li><a href="#about">ПРЕИМУЩЕСТВА</a></li>
+                <li><a href="#">ОТЗЫВЫ</a></li>
+                <li><a href="#buy">КАК ЗАКАЗАТЬ</a></li>
+            </ul>
+        </header>
+    </div>
+    <div class="first-screen-wrap">
+        <div class="main-wrap">
+            <div class="first-screen">
+                <h1>Женские кожаные портупеи <strong>Dr.Harness</strong></h1>
+                <p class="sale">Любая модель со скидкой 50% <strong>всего за <span>2990</span>р.</strong></p>
+                <div class="btn-group">
+                    <a href="#" class="btn btn-opacity">повседневные портупеи</a>
+                    <a href="#" class="btn btn-opacity">Эротические портупеи</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-wrap" id="about">
+        <div class="about">
+            <h2>Хит №1 в мире – модные женские портупеи 2017</h2>
+            <p>Как и все кожаные аксессуары, портупея находится сегодня на пике востребованности в мире моды, даря своей
+                обладательнице внимание и уверенность в себе.
+            </p>
+            <p>Многообразие видов портупей – это как Характер каждой девушки: от портупеи из тонких ремешков для
+                романтичных и женственных натур, до сложных сплетений из средних и широких - для дерзких и
+                раскрепощенных.
+            </p>
+        </div>
+    </div>
+    <div class="gallery">
+        <!-- <img src="/img/7.png" alt="" class="gallery-item"> -->
+        <img src="/img/1.png" alt="" class="gallery-item">
+        <img src="/img/2.png" alt="" class="gallery-item">
+        <img src="/img/3.png" alt="" class="gallery-item">
+        <img src="/img/4.png" alt="" class="gallery-item">
+        <img src="/img/5.png" alt="" class="gallery-item">
+        <!-- <img src="/img/6.png" alt="" class="gallery-item"> -->
+    </div>
+    <div class="price-table-wrap">
+        <div class="main-wrap">
+            <h2>ТАБЛИЦА РАЗМЕРОВ</h2>
+            <div class="white">
+                <table class="price-table">
+                    <tr class="bold">
+                        <th>Международный</th>
+                        <th>XS</th>
+                        <th>S</th>
+                        <th>M</th>
+                        <th>L</th>
+                        <th>XL</th>
+                        <th>XXL</th>
+                    </tr>
+                    <tr class="bold">
+                        <td>Российский</td>
+                        <td>40</td>
+                        <td>42</td>
+                        <td>44/46</td>
+                        <td>48/50</td>
+                        <td>52/54</td>
+                        <td>56</td>
+                    </tr>
+                    <tr>
+                        <td class="bold">Бедра (см)</td>
+                        <td>84-92</td>
+                        <td>92-95</td>
+                        <td>96-101</td>
+                        <td>102-108</td>
+                        <td>109-116</td>
+                        <td>117-121</td>
+                    </tr>
+                    <tr>
+                        <td class="bold">Талия (см)</td>
+                        <td>60-65</td>
+                        <td>66-69</td>
+                        <td>70-77</td>
+                        <td>78-85</td>
+                        <td>86-95</td>
+                        <td>96-102</td>
+                    </tr>
+                    <tr>
+                        <td class="bold">Грудь (см)</td>
+                        <td>74-80</td>
+                        <td>82-85</td>
+                        <td>86-93</td>
+                        <td>94-102</td>
+                        <td>103-113</td>
+                        <td>114-119</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="main-wrap" id="catalog">
+        <div class="catalog">
+            <h2>КАТАЛОГ</h2>
+            <div class="btn-group">
+                <a href="#" class="btn btn-bg casual-btn btn-bg_active">повседневные портупеи</a>
+                <a href="#" class="btn btn-bg erotic-btn ">Эротические портупеи</a>
+            </div>
+            <div class="modal" style="display: none;">
+                <img src="" alt="">
+                <div class="description">
+                    <span class="close">&times;</span>
+                    <p class="name"></p>
+                    <div class="prices">
+                        <span class="old-price">4990 р.</span>
+                        <span class="new-price">2990 р.</span>
+                    </div>
+                    <form action="">
+                        <select name="" id="" aria-placeholder="Выберите размер">
+                            <option value="XS">XS</option>
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                            <option value="XXL">XXL</option>
+                        </select>
+                        <input type="text" placeholder="Введите ваше имя">
+                        <input type="text" placeholder="Введите ваш телефон">
+                        <input type="submit" class="buy" value="оформить заказ">
+                    </form>
+                </div>
+            </div>
+            <div class="modal-thanks" style="display: none;">
+                <div class="block-thanks">
+                    <h3>Заявка отправлена!</h3>
+                    <p>Спасибо за покупку! Наш специалист скоро свяжется с вами.</p>
+                    <span></span>
+                </div>
+            </div>
+            <div class="catalog-view">
+                <div class="catalog-wrap casual show">
+                    <div class="catalog-item" id="0">
+                        <div class="sale">-53%</div>
+                        <img src="/img/items/item2.png" alt="">
+                        <p class="name">Портупея “Пеппи”</p>
+                        <div class="sizes">
+                            <span class="choose-size">XS</span>
+                            <span>S</span>
+                            <span>M</span>
+                            <span>L</span>
+                            <span>XL</span>
+                            <span>XXL</span>
+                        </div>
+                        <div class="colors">
+                            <div class="color-item red"></div>
+                            <div class="color-item black"></div>
+                        </div>
+                        <div class="prices">
+                            <span class="old-price">4990 р.</span>
+                            <span class="new-price">2990 р.</span>
+                        </div>
+                        <a href="#" class="buy">ЗАКАЗАТЬ</a>
+                    </div>
+                    <div class="catalog-item" id="1">
+                        <div class="sale">-53%</div>
+                        <img src="/img/items/item1.png" alt="">
+                        <p class="name">Портупея “Влади”</p>
+                        <div class="sizes">
+                            <span>XS</span>
+                            <span>S</span>
+                            <span>M</span>
+                            <span>L</span>
+                            <span>XL</span>
+                            <span>XXL</span>
+                        </div>
+                        <div class="colors">
+                            <div class="color-item red"></div>
+                            <div class="color-item black"></div>
+                        </div>
+                        <div class="prices">
+                            <span class="old-price">4990 р.</span>
+                            <span class="new-price">2990 р.</span>
+                        </div>
+                        <a href="#" class="buy">ЗАКАЗАТЬ</a>
+                    </div>
+                    <div class="catalog-item" id="2">
+                        <div class="sale">-53%</div>
+                        <img src="/img/items/item3.png" alt="">
+                        <p class="name">Портупея “Джони Миллер”</p>
+                        <div class="sizes">
+                            <span>XS</span>
+                            <span>S</span>
+                            <span>M</span>
+                            <span>L</span>
+                            <span>XL</span>
+                            <span>XXL</span>
+                        </div>
+                        <div class="colors">
+                            <div class="color-item red"></div>
+                            <div class="color-item black"></div>
+                        </div>
+                        <div class="prices">
+                            <span class="old-price">4990 р.</span>
+                            <span class="new-price">2990 р.</span>
+                        </div>
+                        <a href="#" class="buy">ЗАКАЗАТЬ</a>
+                    </div>
+                    <div class="catalog-item" id="3">
+                        <div class="sale">-53%</div>
+                        <img src="/img/items/item2.png" alt="">
+                        <p class="name">Портупея “Пеппи”</p>
+                        <div class="sizes">
+                            <span>XS</span>
+                            <span>S</span>
+                            <span>M</span>
+                            <span>L</span>
+                            <span>XL</span>
+                            <span>XXL</span>
+                        </div>
+                        <div class="colors">
+                            <div class="color-item red"></div>
+                            <div class="color-item black"></div>
+                        </div>
+                        <div class="prices">
+                            <span class="old-price">4990 р.</span>
+                            <span class="new-price">2990 р.</span>
+                        </div>
+                        <a href="#" class="buy">ЗАКАЗАТЬ</a>
+                    </div>
+                    <div class="catalog-item" id="4">
+                        <div class="sale">-53%</div>
+                        <img src="/img/items/item1.png" alt="">
+                        <p class="name">Портупея “Влади”</p>
+                        <div class="sizes">
+                            <span>XS</span>
+                            <span>S</span>
+                            <span>M</span>
+                            <span>L</span>
+                            <span>XL</span>
+                            <span>XXL</span>
+                        </div>
+                        <div class="colors">
+                            <div class="color-item red"></div>
+                            <div class="color-item black"></div>
+                        </div>
+                        <div class="prices">
+                            <span class="old-price">4990 р.</span>
+                            <span class="new-price">2990 р.</span>
+                        </div>
+                        <a href="#" class="buy">ЗАКАЗАТЬ</a>
+                    </div>
+                    <div class="catalog-item" id="5">
+                        <div class="sale">-53%</div>
+                        <img src="/img/items/item3.png" alt="">
+                        <p class="name">Портупея “Джони Миллер”</p>
+                        <div class="sizes">
+                            <span>XS</span>
+                            <span>S</span>
+                            <span>M</span>
+                            <span>L</span>
+                            <span>XL</span>
+                            <span>XXL</span>
+                        </div>
+                        <div class="colors">
+                            <div class="color-item red"></div>
+                            <div class="color-item black"></div>
+                        </div>
+                        <div class="prices">
+                            <span class="old-price">4990 р.</span>
+                            <span class="new-price">2990 р.</span>
+                        </div>
+                        <a href="#" class="buy">ЗАКАЗАТЬ</a>
+                    </div>
+                </div>
+                <div class="catalog-wrap erotic hide">
+                    <div class="catalog-item" id="6">
+                        <div class="sale">-53%</div>
+                        <img src="/img/items/item3.png" alt="">
+                        <p class="name">Портупея “Пеппи”</p>
+                        <div class="sizes">
+                            <span>XS</span>
+                            <span>S</span>
+                            <span>M</span>
+                            <span>L</span>
+                            <span>XL</span>
+                            <span>XXL</span>
+                        </div>
+                        <div class="colors">
+                            <div class="color-item red"></div>
+                            <div class="color-item black"></div>
+                        </div>
+                        <div class="prices">
+                            <span class="old-price">4990 р.</span>
+                            <span class="new-price">2990 р.</span>
+                        </div>
+                        <a href="#" class="buy">ЗАКАЗАТЬ</a>
+                    </div>
+                    <div class="catalog-item" id="7">
+                        <div class="sale">-53%</div>
+                        <img src="/img/items/item2.png" alt="">
+                        <p class="name">Портупея “Влади”</p>
+                        <div class="sizes">
+                            <span>XS</span>
+                            <span>S</span>
+                            <span>M</span>
+                            <span>L</span>
+                            <span>XL</span>
+                            <span>XXL</span>
+                        </div>
+                        <div class="colors">
+                            <div class="color-item red"></div>
+                            <div class="color-item black"></div>
+                        </div>
+                        <div class="prices">
+                            <span class="old-price">4990 р.</span>
+                            <span class="new-price">2990 р.</span>
+                        </div>
+                        <a href="#" class="buy">ЗАКАЗАТЬ</a>
+                    </div>
+                    <div class="catalog-item" id="8">
+                        <div class="sale">-53%</div>
+                        <img src="/img/items/item1.png" alt="">
+                        <p class="name">Портупея “Джони Миллер”</p>
+                        <div class="sizes">
+                            <span>XS</span>
+                            <span>S</span>
+                            <span>M</span>
+                            <span>L</span>
+                            <span>XL</span>
+                            <span>XXL</span>
+                        </div>
+                        <div class="colors">
+                            <div class="color-item red"></div>
+                            <div class="color-item black"></div>
+                        </div>
+                        <div class="prices">
+                            <span class="old-price">4990 р.</span>
+                            <span class="new-price">2990 р.</span>
+                        </div>
+                        <a href="#" class="buy">ЗАКАЗАТЬ</a>
+                    </div>
+                    <div class="catalog-item" id="9">
+                        <div class="sale">-53%</div>
+                        <img src="/img/items/item3.png" alt="">
+                        <p class="name">Портупея “Пеппи”</p>
+                        <div class="sizes">
+                            <span>XS</span>
+                            <span>S</span>
+                            <span>M</span>
+                            <span>L</span>
+                            <span>XL</span>
+                            <span>XXL</span>
+                        </div>
+                        <div class="colors">
+                            <div class="color-item red"></div>
+                            <div class="color-item black"></div>
+                        </div>
+                        <div class="prices">
+                            <span class="old-price">4990 р.</span>
+                            <span class="new-price">2990 р.</span>
+                        </div>
+                        <a href="#" class="buy">ЗАКАЗАТЬ</a>
+                    </div>
+                    <div class="catalog-item" id="10">
+                        <div class="sale">-53%</div>
+                        <img src="/img/items/item2.png" alt="">
+                        <p class="name">Портупея “Влади”</p>
+                        <div class="sizes">
+                            <span>XS</span>
+                            <span>S</span>
+                            <span>M</span>
+                            <span>L</span>
+                            <span>XL</span>
+                            <span>XXL</span>
+                        </div>
+                        <div class="colors">
+                            <div class="color-item red"></div>
+                            <div class="color-item black"></div>
+                        </div>
+                        <div class="prices">
+                            <span class="old-price">4990 р.</span>
+                            <span class="new-price">2990 р.</span>
+                        </div>
+                        <a href="#" class="buy">ЗАКАЗАТЬ</a>
+                    </div>
+                    <div class="catalog-item" id="11">
+                        <div class="sale">-53%</div>
+                        <img src="/img/items/item1.png" alt="">
+                        <p class="name">Портупея “Джони Миллер”</p>
+                        <div class="sizes">
+                            <span>XS</span>
+                            <span>S</span>
+                            <span>M</span>
+                            <span>L</span>
+                            <span>XL</span>
+                            <span>XXL</span>
+                        </div>
+                        <div class="colors">
+                            <div class="color-item red"></div>
+                            <div class="color-item black"></div>
+                        </div>
+                        <div class="prices">
+                            <span class="old-price">4990 р.</span>
+                            <span class="new-price">2990 р.</span>
+                        </div>
+                        <a href="#" class="buy">ЗАКАЗАТЬ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="how-to-buy-wrap" id="buy">
+        <div class="main-wrap">
+            <h2>Как заказать</h2>
+            <div class="how-to-buy">
+                <div class="item-wrap">
+                    <div class="item">
+                        <img src="/img/newspaper.png" alt="">
+                    </div>
+                    <p>Вы оформляете заказ на нашем сайте</p>
+                </div>
+                <div class="item-wrap">
+                    <div class="item">
+                        <img src="/img/telemarketer.png" alt="">
+                    </div>
+                    <p>Менеджер перезвонит для уточнения деталей заказа</p>
+                </div>
+                <div class="item-wrap">
+                    <div class="item">
+                        <img src="/img/package.png" alt="">
+                    </div>
+                    <p>В ближайшее время отправляем ваш заказ</p>
+                </div>
+                <div class="item-wrap">
+                    <div class="item">
+                        <img src="/img/card.png" alt="">
+                    </div>
+                    <p>Вы оплачиваете заказ при&nbsp;получении</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="/index.js"></script>
+</body>
+
+</html>
