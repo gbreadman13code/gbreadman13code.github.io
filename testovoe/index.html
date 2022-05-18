@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <a href="#"><img src="img/krk_logo.svg" alt="Кредит Финанс" class="logo"></a>
+        <div class="user-menu">
+            <a href="#"><img src="img/user-icon.png" alt="user" class="user-avatar"></a>
+            <a href="#">Профиль</a>
+            <a href="#" class="logout">Выход</a>
+        </div>
+    </header>
+    <div class="wrapper">
+        <aside class="col-3">
+            <ul class="menu">
+                <li> <a href="#">Меню 1</a></li>
+                <li> <a href="#">Меню 2</a></li>
+                <li> <a href="#">Меню 3</a></li>
+                <li> <a href="#" onclick="toggleSubmenu()">Меню 4</a></li>
+                <li class="has_submenu">
+                    <ul class="submenu">
+                        <li><a href="#">Меню 4.1</a></li>
+                        <li><a href="#">Меню 4.2</a></li>
+                        <li><a href="#">Меню 4.3</a></li>
+                        <li><a href="#">Меню 4.4</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Меню 5</a></li>
+            </ul>
+        </aside>
+        <main class="main-content col-9">
+            <section class="list">
+                <div class="col-4">
+                    <input type="text" name="filter" id="filter" placeholder="Фильтр...">
+                    <div class="list-group" id="list-tab" role="tablist">
+                        <a class="list-group-item list-group-item-action active list-item" id="list-home-list"
+                            data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home">
+                            <div class="first-string">
+                                <p>Заголовок</p>
+                                <span>Текст 2</span>
+                            </div>
+                            <span>Текст 1</span>
+                        </a>
+                        <a class="list-group-item list-group-item-action list-item" id="list-profile-list"
+                            data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile">
+                            <div class="first-string">
+                                <p>Заголовок</p>
+                                <span>Текст 2</span>
+                            </div>
+                            <span>Текст 1</span>
+                        </a>
+                        <a class="list-group-item list-group-item-action list-item" id="list-messages-list"
+                            data-bs-toggle="list" href="#list-messages" role="tab" aria-controls="list-messages">
+                            <div class="first-string">
+                                <p>Заголовок</p>
+                                <span>Текст 2</span>
+                            </div>
+                            <span>Текст 1</span>
+                        </a>
+                        <a class="list-group-item list-group-item-action list-item" id="list-settings-list"
+                            data-bs-toggle="list" href="#list-settings" role="tab" aria-controls="list-settings">
+                            <div class="first-string">
+                                <p>Заголовок</p>
+                                <span>Текст 2</span>
+                            </div>
+                            <span>Текст 1</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-8">
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="list-home" role="tabpanel"
+                            aria-labelledby="list-home-list">
+                            <h2>Заголовок</h2>
+                            <div>
+                                <div class="text">
+                                    <p>Текст 1</p>
+                                    <span>Значение 1</span>
+                                </div>
+                                <div class="text">
+                                    <p>Текст 2</p>
+                                    <span>Значение 2</span>
+                                </div>
+                            </div>
+                            <table>
+                                <caption align="top">Таблица</caption>
+                                <tr>
+                                    <th>Колонка 1</th>
+                                    <th>Колонка 2</th>
+                                    <th>Колонка 3</th>
+                                    <th>Колонка 4</th>
+                                </tr>
+                                <tr>
+                                    <td>Значение</td>
+                                    <td>Значение</td>
+                                    <td>Значение</td>
+                                    <td>Значение</td>
+                                </tr>
+                                <tr>
+                                    <td>Значение</td>
+                                    <td>Значение</td>
+                                    <td>Значение</td>
+                                    <td>Значение</td>
+                                </tr>
+                                <tr>
+                                    <td>Значение</td>
+                                    <td>Значение</td>
+                                    <td>Значение</td>
+                                    <td>Значение</td>
+                                </tr>
+                            </table>
+                            <div class="action">
+                                <button type="button" class="btn btn-primary">Добавить</button>
+                                <button type="button" class="btn btn-danger">Удалить</button>
+                                <button type="button" class="btn btn-success">Сохранить</button>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="list-profile" role="tabpanel"
+                            aria-labelledby="list-profile-list">
+                            <h2>Заголовок</h2>
+                            <div>
+                                <div class="text">
+                                    <p>Текст 1</p>
+                                    <span>Значение 1</span>
+                                </div>
+                                <div class="text">
+                                    <p>Текст 2</p>
+                                    <span>Значение 2</span>
+                                </div>
+                            </div>
+                            <table>
+                                <caption align="top">Таблица</caption>
+                                <tr>
+                                    <th>Колонка 1</th>
+                                    <th>Колонка 2</th>
+                                    <th>Колонка 3</th>
+                                    <th>Колонка 4</th>
+                                </tr>
+                                <tr>
+                                    <td>Значение</td>
+                                    <td>Значение</td>
+                                    <td>Значение</td>
+                                    <td>Значение</td>
+                                </tr>
+                                <tr>
+                                    <td>Значение</td>
+                                    <td>Значение</td>
+                                    <td>Значение</td>
+                                    <td>Значение</td>
+                                </tr>
+                                <tr>
+                                    <td>Значение</td>
+                                    <td>Значение</td>
+                                    <td>Значение</td>
+                                    <td>Значение</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="tab-pane fade" id="list-messages" role="tabpanel"
+                            aria-labelledby="list-messages-list">Lorem ipsum dolor sit, amet consectetur adipisicing
+                            elit. Autem alias, facilis sunt praesentium voluptate repellat iste inventore reiciendis
+                            maiores rerum iusto debitis sed ut nobis, quos odio saepe eaque. Qui!</div>
+                        <div class="tab-pane fade" id="list-settings" role="tabpanel"
+                            aria-labelledby="list-settings-list">
+                            <h2>Заголовок</h2>
+                            <div>
+                                <div class="text">
+                                    <p>Текст 1</p>
+                                    <span>Значение 1</span>
+                                </div>
+                                <div class="text">
+                                    <p>Текст 2</p>
+                                    <span>Значение 2</span>
+                                </div>
+                            </div>
+                            <table>
+                                <caption align="top">Таблица</caption>
+                                <tr>
+                                    <th>Колонка 1</th>
+                                    <th>Колонка 2</th>
+                                    <th>Колонка 3</th>
+                                    <th>Колонка 4</th>
+                                </tr>
+                                <tr>
+                                    <td>Значение</td>
+                                    <td>Значение</td>
+                                    <td>Значение</td>
+                                    <td>Значение</td>
+                                </tr>
+                                <tr>
+                                    <td>Значение</td>
+                                    <td>Значение</td>
+                                    <td>Значение</td>
+                                    <td>Значение</td>
+                                </tr>
+                                <tr>
+                                    <td>Значение</td>
+                                    <td>Значение</td>
+                                    <td>Значение</td>
+                                    <td>Значение</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="/my_variant/js/main.js"></script>
+</body>
+
+</html>
